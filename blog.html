@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ব্লগ — ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</title>
+  <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="notice-bar">
+    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
+        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
+    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="16" fill="#0F5257" />
+          <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+      </a>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <nav class="main-nav">
+        <a href="index.html">হোম</a>
+        <a href="history.html">ইতিহাস</a>
+        <a href="teachers.html">শিক্ষকবৃন্দ</a>
+        <a href="students.html">শিক্ষার্থীরা</a>
+        <a href="results.html">পরীক্ষার ফলাফল</a>
+        <a href="about.html">পরিচিতি</a>
+        <a href="blog.html" class="active">ব্লগ</a>
+        <a href="contact.html">যোগাযোগ</a>
+      </nav>
+      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+        <span class="icon-light">&#9789;</span>
+        <span class="icon-dark">&#9728;</span>
+      </button>
+      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">হোম</a> / ব্লগ</div>
+        <h1>ক্যাম্পাসের খবর।</h1>
+        <p>শ্রেণিকক্ষ, ক্লাব, ক্রীড়া এবং ভর্তি অফিসের সাম্প্রতিক তথ্য — নিচে বিভাগ অনুযায়ী ফিল্টার করুন।</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+
+        <div class="blog-featured reveal">
+          <img src="https://picsum.photos/id/1084/700/560" alt="ব্রাইটল্যান্ডসের মডেল ইউএন দল">
+          <div class="blog-body">
+            <span class="blog-tag">ক্লাব ও কার্যক্রম</span>
+            <h2>মডেল ইউএন দল আঞ্চলিক প্রতিযোগিতায় দ্বিতীয় স্থান অর্জন করেছে</h2>
+            <p>এগারোজন প্রতিনিধি, একটি দীর্ঘ সপ্তাহান্ত, এবং প্যাসিফিক নর্থওয়েস্ট আঞ্চলিক সম্মেলনে দ্বিতীয় স্থান —
+              প্রোগ্রামের ইতিহাসে দলের সেরা ফলাফল।</p>
+            <span class="blog-date">১৪ আগস্ট, ২০২৬</span>
+            <a class="btn btn-ghost" href="#" style="margin-top:1rem;">পুরো খবর পড়ুন →</a>
+          </div>
+        </div>
+
+        <div class="filter-bar reveal" style="margin-bottom: 2rem;">
+          <button class="filter-btn active" data-blog-filter="all">সকল পোস্ট</button>
+          <button class="filter-btn" data-blog-filter="academics">শিক্ষাক্রম</button>
+          <button class="filter-btn" data-blog-filter="clubs">ক্লাব ও কার্যক্রম</button>
+          <button class="filter-btn" data-blog-filter="admissions">ভর্তি</button>
+          <button class="filter-btn" data-blog-filter="community">সম্প্রদায়</button>
+        </div>
+
+        <div class="blog-grid reveal">
+
+          <article class="blog-card" data-category="academics">
+            <img src="https://picsum.photos/id/1074/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">শিক্ষাক্রম</span>
+              <span class="blog-date">১৪ আগস্ট, ২০২৬</span>
+              <h3>সিনিয়র ক্যাপস্টোন: এ বছরের প্রকল্পগুলোর ঝলক</h3>
+              <p>সৌর জল-গরম করার প্রোটোটাইপ থেকে শুরু করে স্থানীয় পাখি অভিপ্রয়ণ নিয়ে গবেষণা পর্যন্ত।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="clubs">
+            <img src="https://picsum.photos/id/1080/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">ক্লাব ও কার্যক্রম</span>
+              <span class="blog-date">২৮ জুলাই, ২০২৬</span>
+              <h3>মডেল ইউএন দল আঞ্চলিক প্রতিযোগিতায় দ্বিতীয় স্থান অর্জন করেছে</h3>
+              <p>এগারোজন প্রতিনিধি, একটি দীর্ঘ সপ্তাহান্ত, এবং একটি দ্বিতীয় স্থান অর্জন।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="admissions">
+            <img src="https://picsum.photos/id/1076/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">ভর্তি</span>
+              <span class="blog-date">৯ জুলাই, ২০২৬</span>
+              <h3>২০২৭ শিক্ষাবর্ষের ভর্তি আবেদন এখন খোলা</h3>
+              <p>এ বছরের আবেদন প্রক্রিয়ায় নতুন কী আছে, আর কী অপরিবর্তিত রয়েছে।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="academics">
+            <img src="https://picsum.photos/id/1043/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">শিক্ষাক্রম</span>
+              <span class="blog-date">২০ জুন, ২০২৬</span>
+              <h3>৭ম শ্রেণির গবেষণা সিম্পোজিয়ামের ভেতরের কথা</h3>
+              <p>এ বছরের স্বাধীন গবেষণার বিষয়গুলো মাইক্রোপ্লাস্টিক থেকে স্থানীয় মৌখিক ইতিহাস পর্যন্ত বিস্তৃত ছিল।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="community">
+            <img src="https://picsum.photos/id/1060/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">সম্প্রদায়</span>
+              <span class="blog-date">৫ জুন, ২০২৬</span>
+              <h3>গ্লোবাল ক্যারিয়ার ফেয়ারে ফিরে এলেন প্রাক্তন শিক্ষার্থীরা</h3>
+              <p>পঁয়ত্রিশজন স্নাতক ক্যাম্পাসে ফিরে বর্তমান জুনিয়র ও সিনিয়রদের সাথে ক্যারিয়ার নিয়ে কথা বলেছেন।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="clubs">
+            <img src="https://picsum.photos/id/1069/500/320" alt="">
+            <div class="blog-card-body">
+              <span class="blog-tag">ক্লাব ও কার্যক্রম</span>
+              <span class="blog-date">২২ মে, ২০২৬</span>
+              <h3>রোবোটিক্স দল রাজ্য সেমিফাইনালে পৌঁছেছে</h3>
+              <p>প্রোগ্রামের ইতিহাসে প্রথমবার, এবং দল ইতিমধ্যে পরবর্তী মৌসুমের জন্য প্রস্তুতি নিচ্ছে।</p>
+              <a class="more" href="#">আরও পড়ুন →</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
+          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
+            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <form class="newsletter">
+            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
+            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+          </form>
+          <p class="newsletter-note form-note"></p>
+        </div>
+        <div>
+          <h4>অন্বেষণ করুন</h4>
+          <a href="history.html">আমাদের ইতিহাস</a>
+          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
+          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
+          <a href="results.html">পরীক্ষার ফলাফল</a>
+        </div>
+        <div>
+          <h4>প্রতিষ্ঠান</h4>
+          <a href="about.html">আমাদের সম্পর্কে</a>
+          <a href="blog.html">ব্লগ</a>
+          <a href="contact.html">যোগাযোগ</a>
+        </div>
+        <div>
+          <h4>ঠিকানা</h4>
+          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
+          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <script src="script.js"></script>
+</body>
+
+</html>

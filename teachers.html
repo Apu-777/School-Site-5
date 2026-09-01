@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের শিক্ষকবৃন্দ — ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</title>
+  <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="notice-bar">
+    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
+        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
+    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="16" fill="#0F5257" />
+          <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+      </a>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <nav class="main-nav">
+        <a href="index.html">হোম</a>
+        <a href="history.html">ইতিহাস</a>
+        <a href="teachers.html" class="active">শিক্ষকবৃন্দ</a>
+        <a href="students.html">শিক্ষার্থীরা</a>
+        <a href="results.html">পরীক্ষার ফলাফল</a>
+        <a href="about.html">পরিচিতি</a>
+        <a href="blog.html">ব্লগ</a>
+        <a href="contact.html">যোগাযোগ</a>
+      </nav>
+      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+        <span class="icon-light">&#9789;</span>
+        <span class="icon-dark">&#9728;</span>
+      </button>
+      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb"><a href="index.html">হোম</a> / শিক্ষকবৃন্দ</div>
+        <h1>আমাদের শিক্ষক তালিকা খুঁজুন।</h1>
+        <p>নয়টি বিভাগ জুড়ে ৮৫ জন শিক্ষক। নাম দিয়ে খুঁজুন, অথবা নিচে বিভাগ অনুযায়ী ফিল্টার করুন।</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+
+        <div class="teacher-toolbar reveal">
+          <div class="teacher-search">
+            <span>&#128269;</span>
+            <input type="text" placeholder="নাম দিয়ে শিক্ষক খুঁজুন...">
+          </div>
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">সকল বিভাগ</button>
+            <button class="filter-btn" data-filter="sciences">বিজ্ঞান</button>
+            <button class="filter-btn" data-filter="humanities">মানবিক</button>
+            <button class="filter-btn" data-filter="mathematics">গণিত</button>
+            <button class="filter-btn" data-filter="languages">বিশ্ব ভাষা</button>
+            <button class="filter-btn" data-filter="arts">কলা</button>
+          </div>
+        </div>
+
+        <div class="teacher-grid reveal">
+
+          <div class="teacher-card" data-dept="sciences" data-name="Helena Marsh">
+            <img class="teacher-photo" src="https://picsum.photos/id/20/200/200" alt="হেলেনা মার্শ">
+            <span class="teacher-dept">বিজ্ঞান</span>
+            <h3>হেলেনা মার্শ</h3>
+            <p>বিভাগীয় প্রধান ও পদার্থবিজ্ঞান শিক্ষক। সিনিয়র ক্যাপস্টোন রিভিউ প্যানেলের নেতৃত্ব দেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১০ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="sciences" data-name="Tariq Osei">
+            <img class="teacher-photo" src="https://picsum.photos/id/21/200/200" alt="তারিক ওসেই">
+            <span class="teacher-dept">বিজ্ঞান</span>
+            <h3>তারিক ওসেই</h3>
+            <p>জীববিজ্ঞান ও পরিবেশবিজ্ঞান পড়ান। ক্যাম্পাসের জলাভূমি পুনরুদ্ধার প্রকল্প পরিচালনা করেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৬ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="humanities" data-name="Isabel Duarte">
+            <img class="teacher-photo" src="https://picsum.photos/id/22/200/200" alt="ইসাবেল দুয়ার্তে">
+            <span class="teacher-dept">মানবিক</span>
+            <h3>ইসাবেল দুয়ার্তে</h3>
+            <p>৯ম শ্রেণি থেকে সেমিনার আলোচনার মাধ্যমে বিশ্ব ইতিহাস পড়ান। মডেল ইউএন কোচ।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৩ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="humanities" data-name="Owen Blackwood">
+            <img class="teacher-photo" src="https://picsum.photos/id/23/200/200" alt="ওয়েন ব্ল্যাকউড">
+            <span class="teacher-dept">মানবিক</span>
+            <h3>ওয়েন ব্ল্যাকউড</h3>
+            <p>ইংরেজি সাহিত্য পড়ান। শিক্ষার্থীদের সাহিত্য পত্রিকার তত্ত্বাবধায়ক শিক্ষক।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৯ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="mathematics" data-name="Priyanka Rao">
+            <img class="teacher-photo" src="https://picsum.photos/id/24/200/200" alt="প্রিয়াঙ্কা রাও">
+            <span class="teacher-dept">গণিত</span>
+            <h3>প্রিয়াঙ্কা রাও</h3>
+            <p>উচ্চতর সমস্যা সমাধান ট্র্যাক পরিচালনা করেন এবং গণিত অলিম্পিয়াড দলের কোচ।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১২ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="mathematics" data-name="Callum Reyes">
+            <img class="teacher-photo" src="https://picsum.photos/id/25/200/200" alt="ক্যালাম রেয়েস">
+            <span class="teacher-dept">গণিত</span>
+            <h3>ক্যালাম রেয়েস</h3>
+            <p>বাস্তবভিত্তিক মডেলিংয়ের উপর গুরুত্ব দিয়ে বীজগণিত থেকে প্রি-ক্যালকুলাস পর্যন্ত পড়ান।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২১ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="languages" data-name="Amara Nwosu">
+            <img class="teacher-photo" src="https://picsum.photos/id/26/200/200" alt="আমারা এনওসু">
+            <span class="teacher-dept">বিশ্ব ভাষা</span>
+            <h3>আমারা এনওসু</h3>
+            <p>ফরাসি ভাষা পড়ান এবং লিওঁ-তে ১০ম শ্রেণির ইমার্শন এক্সচেঞ্জ প্রোগ্রাম পরিচালনা করেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৪ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="languages" data-name="Wen Jiang">
+            <img class="teacher-photo" src="https://picsum.photos/id/27/200/200" alt="ওয়েন জিয়াং">
+            <span class="teacher-dept">বিশ্ব ভাষা</span>
+            <h3>ওয়েন জিয়াং</h3>
+            <p>সকল স্তরে ম্যান্ডারিন শেখান; ক্যাম্পাসের লুনার নিউ ইয়ার উৎসবের নেতৃত্ব দেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৭ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="languages" data-name="Diego Fuentes">
+            <img class="teacher-photo" src="https://picsum.photos/id/28/200/200" alt="দিয়েগো ফুয়েন্তেস">
+            <span class="teacher-dept">বিশ্ব ভাষা</span>
+            <h3>দিয়েগো ফুয়েন্তেস</h3>
+            <p>স্প্যানিশ পড়ান এবং ওয়াক্সাকার একটি অংশীদার স্কুলের সাথে বার্ষিক পেন-পাল এক্সচেঞ্জ সমন্বয় করেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২০ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="arts" data-name="Freya Lindqvist">
+            <img class="teacher-photo" src="https://picsum.photos/id/29/200/200" alt="ফ্রেয়া লিন্ডকভিস্ট">
+            <span class="teacher-dept">কলা</span>
+            <h3>ফ্রেয়া লিন্ডকভিস্ট</h3>
+            <p>ব্ল্যাক-বক্স থিয়েটার প্রোগ্রাম পরিচালনা করেন, যেখানে প্রতি বছর তিনটি শিক্ষার্থী-রচিত নাটক মঞ্চস্থ হয়।
+            </p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৫ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="arts" data-name="Malik Anderson">
+            <img class="teacher-photo" src="https://picsum.photos/id/30/200/200" alt="মালিক অ্যান্ডারসন">
+            <span class="teacher-dept">কলা</span>
+            <h3>মালিক অ্যান্ডারসন</h3>
+            <p>কয়ার ও স্কুল-পরবর্তী জ্যাজ এনসেম্বলের নেতৃত্ব দেন। ২০২৩ সালে গান লেখার ঐচ্ছিক কোর্স চালু করেন।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৮ সাল থেকে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="sciences" data-name="Greta Lindholm">
+            <img class="teacher-photo" src="https://picsum.photos/id/31/200/200" alt="গ্রেটা লিন্ডহোম">
+            <span class="teacher-dept">বিজ্ঞান</span>
+            <h3>গ্রেটা লিন্ডহোম</h3>
+            <p>রসায়ন শিক্ষক এবং ক্যাম্পাসের সকল ল্যাবের নিরাপত্তা কর্মকর্তা।</p>
+            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২২ সাল থেকে</span>
+          </div>
+
+        </div>
+
+        <p class="no-results">আপনার অনুসন্ধানের সাথে মিলে যায় এমন কোনো শিক্ষক পাওয়া যায়নি। ভিন্ন নাম বা বিভাগ দিয়ে
+          চেষ্টা করুন।</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
+          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
+            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <form class="newsletter">
+            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
+            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+          </form>
+          <p class="newsletter-note form-note"></p>
+        </div>
+        <div>
+          <h4>অন্বেষণ করুন</h4>
+          <a href="history.html">আমাদের ইতিহাস</a>
+          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
+          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
+          <a href="results.html">পরীক্ষার ফলাফল</a>
+        </div>
+        <div>
+          <h4>প্রতিষ্ঠান</h4>
+          <a href="about.html">আমাদের সম্পর্কে</a>
+          <a href="blog.html">ব্লগ</a>
+          <a href="contact.html">যোগাযোগ</a>
+        </div>
+        <div>
+          <h4>ঠিকানা</h4>
+          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
+          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
