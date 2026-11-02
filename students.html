@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আমাদের শিক্ষার্থীরা — ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</title>
+  <script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+  <title data-en="Students — Sobujchhaya High School">শিক্ষার্থীরা — সবুজছায়া উচ্চ বিদ্যালয়</title>
   <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -16,77 +18,75 @@
 <body>
 
   <div class="notice-bar">
-    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
-        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
-    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+    <span data-en="&lt;strong&gt;Admissions open&lt;/strong&gt; — forms for Class 6 and Class 9 (2027 session) are now available. &lt;a href=&quot;notice-details.html#admission-2027&quot; style=&quot;text-decoration:underline;&quot;&gt;See details →&lt;/a&gt;"><strong>ভর্তি চলছে</strong> — ২০২৭ সালের ৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম দেওয়া হচ্ছে। <a href="notice-details.html#admission-2027"
+        style="text-decoration:underline;">বিস্তারিত দেখুন →</a></span>
+    <button class="notice-close" aria-label="বার্তাটা বন্ধ করুন" data-en-aria-label="Close this message">&times;</button>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="17" cy="17" r="16" fill="#0F5257" />
           <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+        <span class="brand-name" data-en="Sobujchhaya&lt;br&gt;High School">সবুজছায়া<br>উচ্চ বিদ্যালয়</span>
       </a>
-      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন" data-en-aria-label="Open/close menu"><span></span></button>
       <nav class="main-nav">
-        <a href="index.html">হোম</a>
-        <a href="history.html">ইতিহাস</a>
-        <a href="teachers.html">শিক্ষকবৃন্দ</a>
-        <a href="students.html" class="active">শিক্ষার্থীরা</a>
-        <a href="results.html">পরীক্ষার ফলাফল</a>
-        <a href="about.html">পরিচিতি</a>
-        <a href="blog.html">ব্লগ</a>
-        <a href="contact.html">যোগাযোগ</a>
+        <a href="index.html" data-en="Home">হোম</a>
+        <a href="history.html" data-en="History">ইতিহাস</a>
+        <a href="teachers.html" data-en="Teachers">শিক্ষকবৃন্দ</a>
+        <a href="students.html" class="active" data-en="Students">শিক্ষার্থীরা</a>
+        <a href="results.html" data-en="Results">ফলাফল</a>
+        <a href="about.html" data-en="About">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </nav>
-      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+      <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন" data-en-aria-label="Choose language">
+        <button type="button" data-lang="bn" lang="bn" aria-pressed="true">বাংলা</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="theme-toggle" aria-label="ডার্ক মোড চালু/বন্ধ" data-en-aria-label="Toggle dark mode">
         <span class="icon-light">&#9789;</span>
         <span class="icon-dark">&#9728;</span>
       </button>
-      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta" data-en="Admissions">ভর্তি তথ্য</a>
     </div>
   </header>
 
   <main>
 
-    <section class="page-hero">
+    <section class="page-hero has-bg" style="--hero-bg: url('images/girls-march.jpg')">
       <div class="wrap">
-        <div class="breadcrumb"><a href="index.html">হোম</a> / শিক্ষার্থীরা</div>
-        <h1>শ্রেণিকক্ষের বাইরের জীবন।</h1>
-        <p>২৮টি শিক্ষার্থী-পরিচালিত ক্লাব, ১১টি প্রতিযোগিতামূলক দল, এবং একটি ক্যাম্পাস যা ৪২টি দেশের প্রতিনিধিত্ব করে।
-        </p>
+        <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Students">শিক্ষার্থীরা</span></div>
+        <h1 data-en="Life outside the classroom.">ক্লাসের বাইরের জীবন।</h1>
+        <p data-en="12 clubs, scouts and guides, a football team that won't stop practising — and a field that's never empty.">১২টা ক্লাব, স্কাউট আর গার্ল গাইড, অনুশীলন থামাতে না চাওয়া একটা ফুটবল দল — আর একটা মাঠ, যেটা কখনো ফাঁকা থাকে না।</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <span class="eyebrow">ক্লাব ও কার্যক্রম</span>
-        <h2>প্রতিটি কৌতূহলী মনের জন্য কিছু না কিছু।</h2>
+        <span class="eyebrow" data-en="Clubs &amp; activities">ক্লাব ও কার্যক্রম</span>
+        <h2 data-en="Something for everyone.">সবার জন্যই কিছু না কিছু আছে।</h2>
         <div class="life-grid reveal">
           <div class="life-block block-lg">
-            <h3>ক্লাব ও ক্রীড়া</h3>
-            <p>মডেল ইউএন ও রোবোটিক্স থেকে শুরু করে সাঁতার ও ব্যাডমিন্টন পর্যন্ত ২৮টি শিক্ষার্থী-পরিচালিত ক্লাব এবং ১১টি
-              প্রতিযোগিতামূলক দল। পাঁচজন শিক্ষার্থী ও একজন শিক্ষক-পৃষ্ঠপোষক রাজি হলে প্রতি টার্মেই নতুন ক্লাব চালু হয়।
-            </p>
+            <h3 data-en="Clubs and sports">ক্লাব আর খেলাধুলা</h3>
+            <p data-en="Debate, science, English, art, environment and more — 12 clubs in all. Football, cricket, badminton and athletics teams practise after school. If five students and one teacher want a new club, we start it.">বিতর্ক, বিজ্ঞান, ইংলিশ, আঁকা, পরিবেশ — সব মিলিয়ে ১২টা ক্লাব। ফুটবল, ক্রিকেট, ব্যাডমিন্টন আর অ্যাথলেটিক্সের দল স্কুল ছুটির পর অনুশীলন করে। পাঁচজন শিক্ষার্থী আর একজন শিক্ষক রাজি হলেই নতুন ক্লাব চালু হয়।</p>
           </div>
           <div class="life-block">
-            <h3>দ্য গ্লোবাল টেবিল</h3>
-            <p>আমাদের ক্যাফেটেরিয়া প্রতি মাসে একটি "গ্লোবাল টেবিল" মেনু চালায়, যা শিক্ষার্থীদের পরিবার থেকে পাওয়া
-              রেসিপি দিয়ে তৈরি হয়।</p>
+            <h3 data-en="Scouts &amp; Girl Guides">স্কাউট ও গার্ল গাইড</h3>
+            <p data-en="Weekly meetings, camps, and a place in every national day parade.">প্রতি সপ্তাহে মিটিং, ক্যাম্প, আর প্রতিটা জাতীয় দিবসের কুচকাওয়াজে অংশ নেওয়া।</p>
           </div>
           <div class="life-block">
-            <h3>আউটডোর প্রোগ্রাম</h3>
-            <p>প্রতিটি শ্রেণি বার্ষিক একটি ভ্রমণে অংশ নেয় — কিন্ডারগার্টেনে একদিনের হাইক থেকে শুরু করে দ্বাদশ শ্রেণিতে
-              সপ্তাহব্যাপী ভ্রমণ পর্যন্ত।</p>
+            <h3 data-en="Study tour">শিক্ষা সফর</h3>
+            <p data-en="Every year, a day trip somewhere new — Foy's Lake, Patenga, or the Liberation War Museum.">প্রতি বছর নতুন কোথাও একদিনের সফর — ফয়েস লেক, পতেঙ্গা কিংবা মুক্তিযুদ্ধ জাদুঘর।</p>
           </div>
           <div class="life-block block-lg">
-            <h3>ছাত্র পরিষদ</h3>
-            <p>নির্বাচিত ছাত্র পরিষদ স্কুলের ডাইনিং ও সুযোগ-সুবিধা কমিটিতে সরাসরি ভোটাধিকার নিয়ে অংশগ্রহণ করে, শুধু
-              পরামর্শদাতা হিসেবে নয়।</p>
+            <h3 data-en="Student cabinet">স্টুডেন্ট কেবিনেট</h3>
+            <p data-en="Every year students elect their own cabinet. They really do help decide things — from the canteen menu to how the sports day is run.">প্রতি বছর শিক্ষার্থীরা ভোট দিয়ে নিজেদের কেবিনেট বেছে নেয়। ক্যান্টিনের খাবার থেকে বার্ষিক ক্রীড়া কীভাবে হবে — অনেক সিদ্ধান্তে ওরা সত্যিই মত দেয়।</p>
           </div>
         </div>
       </div>
@@ -94,21 +94,20 @@
 
     <section class="section alt">
       <div class="wrap">
-        <span class="eyebrow">অর্জন</span>
-        <h2>শিক্ষার্থীরা যা গড়েছে এবং জিতেছে।</h2>
+        <span class="eyebrow" data-en="Achievements">অর্জন</span>
+        <h2 data-en="What our students have won.">আমাদের শিক্ষার্থীরা যা জিতেছে।</h2>
         <div class="card-grid cols-3 reveal">
           <div class="value-card">
-            <h3>আঞ্চলিক মডেল ইউএন-এ রানার্স-আপ</h3>
-            <p>আমাদের প্রতিনিধিদল ২০২৬ সালে প্যাসিফিক নর্থওয়েস্ট আঞ্চলিক মডেল ইউএন সম্মেলনে দ্বিতীয় স্থান অর্জন করেছে।
-            </p>
+            <h3 data-en="Inter-school football champions">আন্তঃস্কুল ফুটবলে চ্যাম্পিয়ন</h3>
+            <p data-en="Our team won the Chattogram city inter-school football tournament in 2026.">২০২৬ সালে চট্টগ্রাম মহানগর আন্তঃস্কুল ফুটবল টুর্নামেন্টে আমাদের দল চ্যাম্পিয়ন হয়েছে।</p>
           </div>
           <div class="value-card">
-            <h3>রাজ্য রোবোটিক্সে সেমিফাইনালিস্ট</h3>
-            <p>রোবোটিক্স দল এ বছর প্রথমবারের মতো রাজ্য পর্যায়ের সেমিফাইনালে পৌঁছেছে।</p>
+            <h3 data-en="Math Olympiad regional round">গণিত অলিম্পিয়াডে আঞ্চলিক পর্ব</h3>
+            <p data-en="Four students won prizes at the Chattogram regional round of the Math Olympiad.">গণিত অলিম্পিয়াডের চট্টগ্রাম আঞ্চলিক পর্বে চারজন শিক্ষার্থী পুরস্কার পেয়েছে।</p>
           </div>
           <div class="value-card">
-            <h3>প্রকাশিত তরুণ লেখক</h3>
-            <p>২০২৩ সাল থেকে ছয়জন শিক্ষার্থীর লেখা আঞ্চলিক তরুণ-লেখক সংকলনে স্থান পেয়েছে।</p>
+            <h3 data-en="Divisional science fair">বিভাগীয় বিজ্ঞান মেলা</h3>
+            <p data-en="Our 'electricity from waste' project came second at the divisional science fair.">বিভাগীয় বিজ্ঞান মেলায় আমাদের 'বর্জ্য থেকে বিদ্যুৎ' প্রকল্প দ্বিতীয় হয়েছে।</p>
           </div>
         </div>
       </div>
@@ -116,23 +115,20 @@
 
     <section class="section">
       <div class="wrap">
-        <span class="eyebrow">তাদের ভাষায়</span>
-        <h2>ব্রাইটল্যান্ডস সম্পর্কে শিক্ষার্থীরা যা বলে।</h2>
+        <span class="eyebrow" data-en="In their words">ওদের মুখেই শুনুন</span>
+        <h2 data-en="What students say about Sobujchhaya.">সবুজছায়া নিয়ে শিক্ষার্থীরা যা বলে।</h2>
         <div class="card-grid cols-3 reveal">
           <div class="value-card">
-            <p style="font-style: italic; color: var(--ink);">"তিনটি ভিন্ন দেশ থেকে আসার পর, আমাদের শ্রেণিকক্ষটাই
-              প্রথমবারের মতো আমার জীবনের বাকি অংশের মতো মনে হয়েছে।"</p>
-            <span class="teacher-years">আমিনা আর., ১০ম শ্রেণি</span>
+            <p style="font-style: italic; color: var(--ink);" data-en="&quot;I used to be scared of speaking English. After a year of English Club, I gave a speech at the annual function.&quot;">"আগে ইংরেজিতে কথা বলতে ভয় পেতাম। এক বছর ইংলিশ ক্লাবে থেকে বার্ষিক অনুষ্ঠানে বক্তৃতা দিয়েছি।"</p>
+            <span class="teacher-years" data-en="Nusrat J., Class 9">নুসরাত জাহান, ৯ম শ্রেণি</span>
           </div>
           <div class="value-card">
-            <p style="font-style: italic; color: var(--ink);">"৭ম শ্রেণিতে থাকতেই আমি প্রথম কার্যকরী রোবট বাহু তৈরি
-              করেছিলাম। কেউ আমাকে বলেনি যে চেষ্টা করার জন্য আমি খুব ছোট।"</p>
-            <span class="teacher-years">লিও এম., ৯ম শ্রেণি</span>
+            <p style="font-style: italic; color: var(--ink);" data-en="&quot;We built a small generator that runs on kitchen waste. Sumon Sir stayed with us till evening every day.&quot;">"আমরা রান্নাঘরের ময়লা দিয়ে চলা ছোট একটা জেনারেটর বানিয়েছিলাম। সুমন স্যার প্রতিদিন সন্ধ্যা পর্যন্ত আমাদের সাথে ছিলেন।"</p>
+            <span class="teacher-years" data-en="Arif H., Class 10">আরিফ হোসেন, ১০ম শ্রেণি</span>
           </div>
           <div class="value-card">
-            <p style="font-style: italic; color: var(--ink);">"আউটডোর ভ্রমণগুলো ছোট মনে হয়, যতক্ষণ না আপনি বৃষ্টির
-              মধ্যে মানচিত্র পড়ার দায়িত্বে থাকেন। এভাবেই দ্রুত বড় হয়ে ওঠা যায়।"</p>
-            <span class="teacher-years">সানা কে., ১১শ শ্রেণি</span>
+            <p style="font-style: italic; color: var(--ink);" data-en="&quot;The best day of the year is sports day. Everyone's on the field — even the teachers run the race.&quot;">"বছরের সেরা দিন বার্ষিক ক্রীড়া। সবাই মাঠে — স্যার-ম্যাডামরাও দৌড়ে নামেন।"</p>
+            <span class="teacher-years" data-en="Tanjila A., Class 7">তানজিলা আক্তার, ৭ম শ্রেণি</span>
           </div>
         </div>
       </div>
@@ -140,21 +136,15 @@
 
     <section class="section alt">
       <div class="wrap">
-        <span class="eyebrow">ক্যাম্পাস গ্যালারি</span>
-        <h2>একনজরে ক্যাম্পাস — বড় করে দেখতে যেকোনো ছবিতে ক্লিক করুন।</h2>
+        <span class="eyebrow" data-en="Photo gallery">ছবিতে স্কুল</span>
+        <h2 data-en="Our school in pictures — click any photo to enlarge.">ছবিতে আমাদের স্কুল — বড় করে দেখতে ছবিতে ক্লিক করুন।</h2>
         <div class="gallery-grid reveal">
-          <button type="button"><img src="https://picsum.photos/id/1027/500/400"
-              alt="ব্রাইটল্যান্ডসের শিক্ষার্থীরা"></button>
-          <button type="button"><img src="https://picsum.photos/id/1035/500/400"
-              alt="ব্রাইটল্যান্ডসের আউটডোর প্রোগ্রাম"></button>
-          <button type="button"><img src="https://picsum.photos/id/1041/500/400"
-              alt="ব্রাইটল্যান্ডসের শ্রেণিকক্ষ"></button>
-          <button type="button"><img src="https://picsum.photos/id/1050/500/400"
-              alt="ব্রাইটল্যান্ডস ক্যাম্পাস প্রাঙ্গণ"></button>
-          <button type="button"><img src="https://picsum.photos/id/1057/500/400"
-              alt="ব্রাইটল্যান্ডসের লাইব্রেরি"></button>
-          <button type="button"><img src="https://picsum.photos/id/1067/500/400"
-              alt="ব্রাইটল্যান্ডসের ক্রীড়া মাঠ"></button>
+          <button type="button"><img src="images/assembly-field.jpg" alt="মাঠে সারি বেঁধে ছাত্রীরা" data-en-alt="Girls lined up on the field" loading="lazy"></button>
+          <button type="button"><img src="images/boys-field.jpg" alt="মাঠে দাঁড়িয়ে ছাত্ররা" data-en-alt="Boys standing on the field" loading="lazy"></button>
+          <button type="button"><img src="images/school-front.jpg" alt="স্কুল ভবনের সামনের দিক" data-en-alt="Front of the school building" loading="lazy"></button>
+          <button type="button"><img src="images/campus-courtyard.jpg" alt="ভবনের ভেতরের উঠান" data-en-alt="Courtyard inside the building" loading="lazy"></button>
+          <button type="button"><img src="images/victory-lights.jpg" alt="বিজয় দিবসে আলোকসজ্জা" data-en-alt="Victory Day lights" loading="lazy"></button>
+          <button type="button"><img src="images/school-building.jpg" alt="স্কুলের লাল ভবন" data-en-alt="The red school building" loading="lazy"></button>
         </div>
       </div>
     </section>
@@ -162,49 +152,49 @@
   </main>
 
   <div class="lightbox">
-    <button class="lightbox-close" aria-label="বন্ধ করুন">&times;</button>
-    <img src="" alt="বড় করা ক্যাম্পাস ছবি">
+    <button class="lightbox-close" aria-label="বন্ধ করুন" data-en-aria-label="Close">&times;</button>
+    <img src="" alt="">
   </div>
 
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
-          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
-            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <h4 data-en="Sobujchhaya High School">সবুজছায়া উচ্চ বিদ্যালয়</h4>
+          <p data-en="A Class 6–10 high school in Agrabad, Chattogram, since 1986. National curriculum, Chattogram Board, MPO-listed.">১৯৮৬ সাল থেকে আগ্রাবাদ, চট্টগ্রামে ৬ষ্ঠ থেকে ১০ম শ্রেণির স্কুল। জাতীয় শিক্ষাক্রম, চট্টগ্রাম বোর্ড, এমপিওভুক্ত।</p>
           <form class="newsletter">
-            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
-            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+            <input type="email" placeholder="আপনার ইমেইল" data-en-placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm" data-en="Subscribe">খবর পেতে চাই</button>
           </form>
           <p class="newsletter-note form-note"></p>
         </div>
         <div>
-          <h4>অন্বেষণ করুন</h4>
-          <a href="history.html">আমাদের ইতিহাস</a>
-          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
-          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
-          <a href="results.html">পরীক্ষার ফলাফল</a>
+          <h4 data-en="Explore">ঘুরে দেখুন</h4>
+          <a href="history.html" data-en="Our history">আমাদের ইতিহাস</a>
+          <a href="teachers.html" data-en="Our teachers">শিক্ষকবৃন্দ</a>
+          <a href="students.html" data-en="Student life">শিক্ষার্থীদের জীবন</a>
+          <a href="results.html" data-en="SSC results">এসএসসি ফলাফল</a>
         </div>
         <div>
-          <h4>প্রতিষ্ঠান</h4>
-          <a href="about.html">আমাদের সম্পর্কে</a>
-          <a href="blog.html">ব্লগ</a>
-          <a href="contact.html">যোগাযোগ</a>
+          <h4 data-en="School">প্রতিষ্ঠান</h4>
+          <a href="about.html" data-en="About us">আমাদের কথা</a>
+          <a href="notice-details.html" data-en="Notice board">নোটিশ বোর্ড</a>
+          <a href="blog.html" data-en="News">স্কুলের খবর</a>
+          <a href="contact.html" data-en="Contact">যোগাযোগ</a>
         </div>
         <div>
-          <h4>ঠিকানা</h4>
-          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
-          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+          <h4 data-en="Address">ঠিকানা</h4>
+          <p data-en="House 15, Road 3, Agrabad R/A&lt;br&gt;Chattogram-4100">বাড়ি ১৫, রোড ৩, আগ্রাবাদ আবাসিক এলাকা<br>চট্টগ্রাম-৪১০০</p>
+          <p data-en="info@yourschool.edu.bd&lt;br&gt;01800-000000">info@yourschool.edu.bd<br>০১৮০০-০০০০০০</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
-        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+        <span data-en="© 2026 Sobujchhaya High School. All rights reserved.">© ২০২৬ সবুজছায়া উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span data-en="Demo site — replace the names, photos and contact details before going live.">ডেমো সাইট — চালু করার আগে নাম, ছবি আর যোগাযোগের তথ্য বদলে নিন।</span>
       </div>
     </div>
   </footer>
-  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
   <script src="script.js"></script>
 </body>
 

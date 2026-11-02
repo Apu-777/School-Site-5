@@ -1,5 +1,5 @@
 /* ===========================================================
-   BRIGHTLANDS INTERNATIONAL SCHOOL — shared stylesheet
+   SOBUJCHHAYA HIGH SCHOOL — shared stylesheet
    Palette : teal #0F5257 · coral #FF6B4A · yellow #FFC145
    Type    : Sora (display) / Inter (body) / JetBrains Mono (utility)
    Supports light + dark theme via [data-theme="dark"] on <html>
@@ -1859,6 +1859,203 @@ tbody tr {
   color: #fff;
 }
 
+/* ---------- language switcher (বাংলা / EN) ---------- */
+.lang-switch {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.lang-switch button {
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch button[lang="bn"] { font-family: "Noto Sans Bengali", var(--font-body); }
+.lang-switch button[lang="en"] { font-family: var(--font-mono); letter-spacing: 0.04em; }
+.lang-switch button:hover { color: var(--teal); }
+.lang-switch button[aria-pressed="true"] { background: var(--teal); color: #fff; }
+[data-theme="dark"] .lang-switch button[aria-pressed="true"] { color: #0F1719; }
+.lang-switch button:focus-visible { outline: 2px solid var(--coral); outline-offset: 1px; }
+
+/* Avoid a flash of Bengali for visitors who picked English (set in <head>, cleared by script.js) */
+html.lang-pending body { visibility: hidden; }
+
+/* Bengali script needs a little more room than Latin.
+   JetBrains Mono has wide spaces, so Bengali "mono" labels use Noto Sans Bengali throughout. */
+html[lang="bn"] { --font-mono: "Noto Sans Bengali", sans-serif; }
+
+/* real portraits in the message cards: show the whole portrait on the coloured panel */
+.message-photo img { width: auto; max-width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+/* Bengali script needs a little more room than Latin */
+html[lang="bn"] body { line-height: 1.75; }
+html[lang="bn"] h1, html[lang="bn"] h2, html[lang="bn"] h3 { line-height: 1.35; }
+html[lang="bn"] .eyebrow, html[lang="bn"] .teacher-dept, html[lang="bn"] .leader-role,
+html[lang="bn"] .message-role { letter-spacing: 0; font-size: 0.8rem; }
+
+/* ---------- staff photos ---------- */
+.teacher-photo {
+  width: 76px;
+  height: 76px;
+  object-position: center top;
+  background: var(--surface-2);
+}
+
+.teacher-title {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin: 0.15rem 0 0.6rem;
+}
+
+.leader-grid { margin-top: 2rem; }
+
+.leader-card .avatar-photo {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--coral), var(--shadow-sm);
+  background: var(--surface-2);
+}
+
+/* leadership cards (teachers page) */
+.lead-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  margin-top: 2.2rem;
+}
+
+.lead-card {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lead-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+.lead-photo { min-height: 262px; }
+.lead-photo-teal { background: linear-gradient(160deg, #0F5257, #17707A); }
+.lead-photo-warm { background: linear-gradient(160deg, #FF6B4A, #FFC145); }
+.lead-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+
+.lead-body { padding: 1.6rem 1.7rem; display: flex; flex-direction: column; align-items: flex-start; }
+.lead-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--coral);
+  color: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.8rem;
+}
+.lead-body h3 { font-size: 1.25rem; margin-bottom: 0.2rem; }
+.lead-role { font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 0.9rem; }
+.lead-facts { list-style: none; margin-bottom: 1rem; }
+.lead-facts li { position: relative; padding-left: 1.1rem; font-size: 0.88rem; margin-bottom: 0.35rem; }
+.lead-facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+.lead-body .more { margin-top: auto; }
+
+/* teacher group photos */
+.staff-collage {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 210px 210px;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.staff-collage figure {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.staff-collage-main { grid-row: span 2; }
+.staff-collage img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.staff-teaser-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.staff-teaser-head h2 { margin-bottom: 0; }
+
+/* the header has more items now (language switch), so collapse the nav earlier */
+@media (max-width: 1180px) {
+  .header-inner { gap: 0.9rem; }
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--line);
+    display: none;
+    gap: 1rem;
+  }
+  .main-nav.open { display: flex; }
+  .nav-toggle { display: block; order: 5; }
+}
+
+@media (max-width: 900px) {
+  .lead-grid { grid-template-columns: 1fr; }
+  .card-grid.cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .card-grid.cols-3, .card-grid.cols-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .staff-collage { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 150px; gap: 0.8rem; }
+  .staff-collage-main { grid-row: auto; grid-column: span 2; }
+}
+
+@media (max-width: 520px) {
+  .header-inner { padding: 0.75rem 1rem; gap: 0.6rem; }
+  .header-cta { display: none; }
+  .lead-card { grid-template-columns: 1fr; }
+  .lead-photo { min-height: 0; height: 300px; display: flex; justify-content: center; }
+  .lead-photo img { width: auto; max-width: 100%; }
+  .lang-switch button { padding: 0.45rem 0.6rem; }
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 980px) {
 
@@ -1969,5 +2166,22 @@ tbody tr {
 
   .marquee-track {
     animation: none;
+  }
+}
+
+/* ---------- inner page banners: photo behind a tint ---------- */
+.page-hero.has-bg{
+  position: relative;
+  background-color: #0B3B3F;
+  background-image:
+    linear-gradient(90deg, rgba(11,59,63,0.94) 0%, rgba(11,59,63,0.84) 45%, rgba(11,59,63,0.55) 100%),
+    var(--hero-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 720px){
+  .page-hero.has-bg{
+    background-image: linear-gradient(rgba(11,59,63,0.86), rgba(11,59,63,0.86)), var(--hero-bg);
   }
 }

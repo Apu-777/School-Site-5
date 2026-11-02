@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আমাদের শিক্ষকবৃন্দ — ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</title>
+  <script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+  <title data-en="Teachers — Sobujchhaya High School">শিক্ষকবৃন্দ — সবুজছায়া উচ্চ বিদ্যালয়</title>
   <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -16,172 +18,277 @@
 <body>
 
   <div class="notice-bar">
-    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
-        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
-    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+    <span data-en="&lt;strong&gt;Admissions open&lt;/strong&gt; — forms for Class 6 and Class 9 (2027 session) are now available. &lt;a href=&quot;notice-details.html#admission-2027&quot; style=&quot;text-decoration:underline;&quot;&gt;See details →&lt;/a&gt;"><strong>ভর্তি চলছে</strong> — ২০২৭ সালের ৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম দেওয়া হচ্ছে। <a href="notice-details.html#admission-2027"
+        style="text-decoration:underline;">বিস্তারিত দেখুন →</a></span>
+    <button class="notice-close" aria-label="বার্তাটা বন্ধ করুন" data-en-aria-label="Close this message">&times;</button>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="17" cy="17" r="16" fill="#0F5257" />
           <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+        <span class="brand-name" data-en="Sobujchhaya&lt;br&gt;High School">সবুজছায়া<br>উচ্চ বিদ্যালয়</span>
       </a>
-      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন" data-en-aria-label="Open/close menu"><span></span></button>
       <nav class="main-nav">
-        <a href="index.html">হোম</a>
-        <a href="history.html">ইতিহাস</a>
-        <a href="teachers.html" class="active">শিক্ষকবৃন্দ</a>
-        <a href="students.html">শিক্ষার্থীরা</a>
-        <a href="results.html">পরীক্ষার ফলাফল</a>
-        <a href="about.html">পরিচিতি</a>
-        <a href="blog.html">ব্লগ</a>
-        <a href="contact.html">যোগাযোগ</a>
+        <a href="index.html" data-en="Home">হোম</a>
+        <a href="history.html" data-en="History">ইতিহাস</a>
+        <a href="teachers.html" class="active" data-en="Teachers">শিক্ষকবৃন্দ</a>
+        <a href="students.html" data-en="Students">শিক্ষার্থীরা</a>
+        <a href="results.html" data-en="Results">ফলাফল</a>
+        <a href="about.html" data-en="About">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </nav>
-      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+      <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন" data-en-aria-label="Choose language">
+        <button type="button" data-lang="bn" lang="bn" aria-pressed="true">বাংলা</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="theme-toggle" aria-label="ডার্ক মোড চালু/বন্ধ" data-en-aria-label="Toggle dark mode">
         <span class="icon-light">&#9789;</span>
         <span class="icon-dark">&#9728;</span>
       </button>
-      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta" data-en="Admissions">ভর্তি তথ্য</a>
     </div>
   </header>
 
   <main>
 
-    <section class="page-hero">
+    <section class="page-hero has-bg" style="--hero-bg: url('images/teachers-students.jpg')">
       <div class="wrap">
-        <div class="breadcrumb"><a href="index.html">হোম</a> / শিক্ষকবৃন্দ</div>
-        <h1>আমাদের শিক্ষক তালিকা খুঁজুন।</h1>
-        <p>নয়টি বিভাগ জুড়ে ৮৫ জন শিক্ষক। নাম দিয়ে খুঁজুন, অথবা নিচে বিভাগ অনুযায়ী ফিল্টার করুন।</p>
+        <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Teachers">শিক্ষকবৃন্দ</span></div>
+        <h1 data-en="The people who teach our children.">যাঁদের হাতে আমাদের বাচ্চারা গড়ে ওঠে।</h1>
+        <p data-en="48 teachers across science, business studies and humanities. Search by name, or filter by subject below.">বিজ্ঞান, ব্যবসায় শিক্ষা আর মানবিক মিলিয়ে ৪৮ জন শিক্ষক। নাম দিয়ে খুঁজুন, অথবা নিচে বিষয় বেছে নিন।</p>
       </div>
     </section>
 
+    <!-- LEADERSHIP -->
     <section class="section">
       <div class="wrap">
+        <span class="eyebrow center" data-en="Leadership">পরিচালনায়</span>
+        <h2 class="center" data-en="The people who run the school.">যাঁরা স্কুলটা চালান।</h2>
+        <div class="lead-grid reveal">
+          <article class="lead-card">
+            <div class="lead-photo lead-photo-warm">
+              <img src="images/people/sobhapoti.jpg" alt="আলহাজ্ব মোঃ নুরুল আবসার" data-en-alt="Alhaj Md. Nurul Absar" width="480" height="600" loading="lazy">
+            </div>
+            <div class="lead-body">
+              <span class="lead-badge" data-en="Chairman">সভাপতি</span>
+              <h3 data-en="Alhaj Md. Nurul Absar">আলহাজ্ব মোঃ নুরুল আবসার</h3>
+              <span class="lead-role" data-en="Chairman, Managing Committee">সভাপতি, ম্যানেজিং কমিটি</span>
+              <ul class="lead-facts">
+                <li data-en="Well-known Agrabad businessman and community worker">আগ্রাবাদের পরিচিত ব্যবসায়ী ও সমাজকর্মী</li>
+                <li data-en="One of the school&#x27;s founding members">স্কুলের প্রতিষ্ঠাতা সদস্যদের একজন</li>
+                <li data-en="Chairman of the committee since 2019">২০১৯ সাল থেকে কমিটির সভাপতি</li>
+              </ul>
+              <a class="more" href="index.html#messages" data-en="Read the message →">বাণী পড়ুন →</a>
+            </div>
+          </article>
+          <article class="lead-card">
+            <div class="lead-photo lead-photo-teal">
+              <img src="images/people/headmaster.jpg" alt="মোহাম্মদ জসিম উদ্দিন" data-en-alt="Mohammad Jashim Uddin" width="480" height="600" loading="lazy">
+            </div>
+            <div class="lead-body">
+              <span class="lead-badge" data-en="Headmaster">প্রধান শিক্ষক</span>
+              <h3 data-en="Mohammad Jashim Uddin">মোহাম্মদ জসিম উদ্দিন</h3>
+              <span class="lead-role" data-en="Headmaster, Sobujchhaya High School">প্রধান শিক্ষক, সবুজছায়া উচ্চ বিদ্যালয়</span>
+              <ul class="lead-facts">
+                <li data-en="M.A, M.Ed (University of Chittagong)">এম.এ, এম.এড (চট্টগ্রাম বিশ্ববিদ্যালয়)</li>
+                <li data-en="26 years of teaching, here since 2014">শিক্ষকতায় ২৬ বছর, এই স্কুলে ২০১৪ থেকে</li>
+                <li data-en="District best headmaster award, 2022">জেলা পর্যায়ে শ্রেষ্ঠ প্রধান শিক্ষক, ২০২২</li>
+              </ul>
+              <a class="more" href="index.html#messages" data-en="Read the message →">বাণী পড়ুন →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP PHOTOS -->
+    <section class="section alt">
+      <div class="wrap">
+        <span class="eyebrow" data-en="All of us">সবাই মিলে</span>
+        <h2 data-en="Our teachers, together.">আমাদের শিক্ষক পরিবার।</h2>
+        <div class="staff-collage">
+          <figure class="staff-collage-main">
+            <img src="images/teachers-group.jpg" alt="শিক্ষকদের একসাথে তোলা ছবি" data-en-alt="Teachers group photo" loading="lazy">
+          </figure>
+          <figure>
+            <img src="images/teachers-group-2.jpg" alt="শিক্ষকদের আরেকটা দলীয় ছবি" data-en-alt="Another teachers group photo" loading="lazy">
+          </figure>
+          <figure>
+            <img src="images/teachers-students.jpg" alt="শিক্ষক ও শিক্ষার্থীদের পুরোনো দলীয় ছবি" data-en-alt="Old group photo of teachers and students" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTORY -->
+    <section class="section">
+      <div class="wrap">
+        <span class="eyebrow" data-en="Teacher list">শিক্ষকদের তালিকা</span>
+        <h2 data-en="Find a teacher.">শিক্ষক খুঁজুন।</h2>
 
         <div class="teacher-toolbar reveal">
           <div class="teacher-search">
             <span>&#128269;</span>
-            <input type="text" placeholder="নাম দিয়ে শিক্ষক খুঁজুন...">
+            <input type="text" placeholder="নাম লিখে খুঁজুন..." data-en-placeholder="Search by name..." aria-label="শিক্ষকের নাম" data-en-aria-label="Teacher name">
           </div>
           <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">সকল বিভাগ</button>
-            <button class="filter-btn" data-filter="sciences">বিজ্ঞান</button>
-            <button class="filter-btn" data-filter="humanities">মানবিক</button>
-            <button class="filter-btn" data-filter="mathematics">গণিত</button>
-            <button class="filter-btn" data-filter="languages">বিশ্ব ভাষা</button>
-            <button class="filter-btn" data-filter="arts">কলা</button>
+            <button class="filter-btn active" data-filter="all" data-en="All">সবাই</button>
+            <button class="filter-btn" data-filter="sciences" data-en="Science">বিজ্ঞান</button>
+            <button class="filter-btn" data-filter="mathematics" data-en="Maths">গণিত</button>
+            <button class="filter-btn" data-filter="languages" data-en="Bangla &amp; English">বাংলা ও ইংরেজি</button>
+            <button class="filter-btn" data-filter="humanities" data-en="Humanities &amp; Business">মানবিক ও ব্যবসায়</button>
+            <button class="filter-btn" data-filter="others" data-en="ICT, PE &amp; more">আইসিটি, শরীরচর্চা ও অন্যান্য</button>
           </div>
         </div>
 
         <div class="teacher-grid reveal">
 
-          <div class="teacher-card" data-dept="sciences" data-name="Helena Marsh">
-            <img class="teacher-photo" src="https://picsum.photos/id/20/200/200" alt="হেলেনা মার্শ">
-            <span class="teacher-dept">বিজ্ঞান</span>
-            <h3>হেলেনা মার্শ</h3>
-            <p>বিভাগীয় প্রধান ও পদার্থবিজ্ঞান শিক্ষক। সিনিয়র ক্যাপস্টোন রিভিউ প্যানেলের নেতৃত্ব দেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১০ সাল থেকে</span>
+          <div class="teacher-card" data-dept="mathematics" data-name="মোঃ আবু সাঈদ চৌধুরী Md. Abu Sayeed Chowdhury">
+            <img class="teacher-photo" src="images/people/asst-headmaster.jpg" alt="মোঃ আবু সাঈদ চৌধুরী" data-en-alt="Md. Abu Sayeed Chowdhury" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Mathematics">গণিত</span>
+            <h3 data-en="Md. Abu Sayeed Chowdhury">মোঃ আবু সাঈদ চৌধুরী</h3>
+            <span class="teacher-title" data-en="Assistant Headmaster · M.Sc (Maths), B.Ed">সহকারী প্রধান শিক্ষক · এম.এসসি (গণিত), বি.এড</span>
+            <p data-en="Runs the timetable, exams and discipline — and still teaches Class 10 maths himself.">রুটিন, পরীক্ষা আর শৃঙ্খলার দায়িত্ব তাঁর। এখনও দশম শ্রেণিতে নিজে গণিত ক্লাস নেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 1998">১৯৯৮ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="sciences" data-name="Tariq Osei">
-            <img class="teacher-photo" src="https://picsum.photos/id/21/200/200" alt="তারিক ওসেই">
-            <span class="teacher-dept">বিজ্ঞান</span>
-            <h3>তারিক ওসেই</h3>
-            <p>জীববিজ্ঞান ও পরিবেশবিজ্ঞান পড়ান। ক্যাম্পাসের জলাভূমি পুনরুদ্ধার প্রকল্প পরিচালনা করেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৬ সাল থেকে</span>
+          <div class="teacher-card" data-dept="languages" data-name="শাহনাজ পারভীন Shahnaz Parvin">
+            <img class="teacher-photo" src="images/people/shahnaz.jpg" alt="শাহনাজ পারভীন" data-en-alt="Shahnaz Parvin" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Bangla">বাংলা</span>
+            <h3 data-en="Shahnaz Parvin">শাহনাজ পারভীন</h3>
+            <span class="teacher-title" data-en="Academic Coordinator · M.A (Bangla), B.Ed">একাডেমিক কো-অর্ডিনেটর · এম.এ (বাংলা), বি.এড</span>
+            <p data-en="Teaches Bangla and keeps track of everything from class tests to report cards.">বাংলা পড়ান, আর ক্লাস টেস্ট থেকে রিপোর্ট কার্ড — সব খাতাপত্রের হিসাব রাখেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2003">২০০৩ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="humanities" data-name="Isabel Duarte">
-            <img class="teacher-photo" src="https://picsum.photos/id/22/200/200" alt="ইসাবেল দুয়ার্তে">
-            <span class="teacher-dept">মানবিক</span>
-            <h3>ইসাবেল দুয়ার্তে</h3>
-            <p>৯ম শ্রেণি থেকে সেমিনার আলোচনার মাধ্যমে বিশ্ব ইতিহাস পড়ান। মডেল ইউএন কোচ।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৩ সাল থেকে</span>
+          <div class="teacher-card" data-dept="sciences" data-name="সুমন কান্তি দাশ Sumon Kanti Das">
+            <img class="teacher-photo" src="images/people/sumon.jpg" alt="সুমন কান্তি দাশ" data-en-alt="Sumon Kanti Das" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Physics">পদার্থবিজ্ঞান</span>
+            <h3 data-en="Sumon Kanti Das">সুমন কান্তি দাশ</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.Sc (Physics), B.Ed">সিনিয়র শিক্ষক · এম.এসসি (পদার্থবিজ্ঞান), বি.এড</span>
+            <p data-en="Head of science. His students have won at the divisional science fair twice.">বিজ্ঞান বিভাগের প্রধান। তাঁর হাতে গড়া দল দুইবার বিভাগীয় বিজ্ঞান মেলায় পুরস্কার এনেছে।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2006">২০০৬ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="humanities" data-name="Owen Blackwood">
-            <img class="teacher-photo" src="https://picsum.photos/id/23/200/200" alt="ওয়েন ব্ল্যাকউড">
-            <span class="teacher-dept">মানবিক</span>
-            <h3>ওয়েন ব্ল্যাকউড</h3>
-            <p>ইংরেজি সাহিত্য পড়ান। শিক্ষার্থীদের সাহিত্য পত্রিকার তত্ত্বাবধায়ক শিক্ষক।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৯ সাল থেকে</span>
+          <div class="teacher-card" data-dept="sciences" data-name="মোঃ ইকবাল হোসেন Md. Iqbal Hossain">
+            <img class="teacher-photo" src="images/people/iqbal.jpg" alt="মোঃ ইকবাল হোসেন" data-en-alt="Md. Iqbal Hossain" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Chemistry">রসায়ন</span>
+            <h3 data-en="Md. Iqbal Hossain">মোঃ ইকবাল হোসেন</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.Sc (Chemistry), B.Ed">সিনিয়র শিক্ষক · এম.এসসি (রসায়ন), বি.এড</span>
+            <p data-en="Teaches chemistry and holds the lab keys. No shortcuts on practical notebooks.">রসায়ন পড়ান, ল্যাবের চাবিও তাঁর কাছে। প্র্যাকটিক্যাল খাতা নিয়ে কোনো ছাড় দেন না।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2009">২০০৯ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="mathematics" data-name="Priyanka Rao">
-            <img class="teacher-photo" src="https://picsum.photos/id/24/200/200" alt="প্রিয়াঙ্কা রাও">
-            <span class="teacher-dept">গণিত</span>
-            <h3>প্রিয়াঙ্কা রাও</h3>
-            <p>উচ্চতর সমস্যা সমাধান ট্র্যাক পরিচালনা করেন এবং গণিত অলিম্পিয়াড দলের কোচ।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১২ সাল থেকে</span>
+          <div class="teacher-card" data-dept="sciences" data-name="রোকসানা আক্তার Roksana Akter">
+            <img class="teacher-photo" src="images/people/roksana.jpg" alt="রোকসানা আক্তার" data-en-alt="Roksana Akter" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Biology">জীববিজ্ঞান</span>
+            <h3 data-en="Roksana Akter">রোকসানা আক্তার</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.Sc (Zoology), B.Ed">সিনিয়র শিক্ষক · এম.এসসি (প্রাণিবিদ্যা), বি.এড</span>
+            <p data-en="Teaches biology. The rooftop garden and environment club were her idea.">জীববিজ্ঞান পড়ান। স্কুলের ছাদবাগান আর পরিবেশ ক্লাব তাঁর উদ্যোগেই শুরু।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2005">২০০৫ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="mathematics" data-name="Callum Reyes">
-            <img class="teacher-photo" src="https://picsum.photos/id/25/200/200" alt="ক্যালাম রেয়েস">
-            <span class="teacher-dept">গণিত</span>
-            <h3>ক্যালাম রেয়েস</h3>
-            <p>বাস্তবভিত্তিক মডেলিংয়ের উপর গুরুত্ব দিয়ে বীজগণিত থেকে প্রি-ক্যালকুলাস পর্যন্ত পড়ান।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২১ সাল থেকে</span>
+          <div class="teacher-card" data-dept="mathematics" data-name="তৌহিদুল ইসলাম Touhidul Islam">
+            <img class="teacher-photo" src="images/people/touhidul.jpg" alt="তৌহিদুল ইসলাম" data-en-alt="Touhidul Islam" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Mathematics">গণিত</span>
+            <h3 data-en="Touhidul Islam">তৌহিদুল ইসলাম</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · B.Sc (Hons), M.Sc (Maths)">সহকারী শিক্ষক · বি.এসসি (অনার্স), এম.এসসি (গণিত)</span>
+            <p data-en="Teaches maths in Classes 6–8 and runs the Math Olympiad practice sessions.">৬ষ্ঠ–৮ম শ্রেণির গণিত পড়ান। গণিত অলিম্পিয়াডের প্রস্তুতি ক্লাসও নেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2018">২০১৮ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="languages" data-name="Amara Nwosu">
-            <img class="teacher-photo" src="https://picsum.photos/id/26/200/200" alt="আমারা এনওসু">
-            <span class="teacher-dept">বিশ্ব ভাষা</span>
-            <h3>আমারা এনওসু</h3>
-            <p>ফরাসি ভাষা পড়ান এবং লিওঁ-তে ১০ম শ্রেণির ইমার্শন এক্সচেঞ্জ প্রোগ্রাম পরিচালনা করেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৪ সাল থেকে</span>
+          <div class="teacher-card" data-dept="mathematics" data-name="সজীব দত্ত Sajib Dutta">
+            <img class="teacher-photo" src="images/people/sajib.jpg" alt="সজীব দত্ত" data-en-alt="Sajib Dutta" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Higher Mathematics">উচ্চতর গণিত</span>
+            <h3 data-en="Sajib Dutta">সজীব দত্ত</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · M.Sc (Maths)">সহকারী শিক্ষক · এম.এসসি (গণিত)</span>
+            <p data-en="Teaches higher maths in Classes 9–10, and makes the hard problems feel easy.">নবম-দশমে উচ্চতর গণিত পড়ান। কঠিন অঙ্ক সহজ করে বোঝানোয় তাঁর জুড়ি নেই।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2019">২০১৯ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="languages" data-name="Wen Jiang">
-            <img class="teacher-photo" src="https://picsum.photos/id/27/200/200" alt="ওয়েন জিয়াং">
-            <span class="teacher-dept">বিশ্ব ভাষা</span>
-            <h3>ওয়েন জিয়াং</h3>
-            <p>সকল স্তরে ম্যান্ডারিন শেখান; ক্যাম্পাসের লুনার নিউ ইয়ার উৎসবের নেতৃত্ব দেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৭ সাল থেকে</span>
+          <div class="teacher-card" data-dept="languages" data-name="মোঃ শহিদুল আলম Md. Shahidul Alam">
+            <img class="teacher-photo" src="images/people/shahidul.jpg" alt="মোঃ শহিদুল আলম" data-en-alt="Md. Shahidul Alam" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="English">ইংরেজি</span>
+            <h3 data-en="Md. Shahidul Alam">মোঃ শহিদুল আলম</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.A (English), B.Ed">সিনিয়র শিক্ষক · এম.এ (ইংরেজি), বি.এড</span>
+            <p data-en="Teaches English and runs the Thursday English Club for speaking practice.">ইংরেজি পড়ান। প্রতি বৃহস্পতিবার 'ইংলিশ ক্লাব'-এ শিক্ষার্থীদের কথা বলা শেখান।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2004">২০০৪ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="languages" data-name="Diego Fuentes">
-            <img class="teacher-photo" src="https://picsum.photos/id/28/200/200" alt="দিয়েগো ফুয়েন্তেস">
-            <span class="teacher-dept">বিশ্ব ভাষা</span>
-            <h3>দিয়েগো ফুয়েন্তেস</h3>
-            <p>স্প্যানিশ পড়ান এবং ওয়াক্সাকার একটি অংশীদার স্কুলের সাথে বার্ষিক পেন-পাল এক্সচেঞ্জ সমন্বয় করেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২০ সাল থেকে</span>
+          <div class="teacher-card" data-dept="languages" data-name="মিজানুর রহমান Mizanur Rahman">
+            <img class="teacher-photo" src="images/people/mizanur.jpg" alt="মিজানুর রহমান" data-en-alt="Mizanur Rahman" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="English">ইংরেজি</span>
+            <h3 data-en="Mizanur Rahman">মিজানুর রহমান</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · M.A (English)">সহকারী শিক্ষক · এম.এ (ইংরেজি)</span>
+            <p data-en="Teaches English in Classes 6–8 and looks after the debate club.">৬ষ্ঠ–৮ম শ্রেণির ইংরেজি পড়ান। বিতর্ক ক্লাবের দায়িত্বেও আছেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2020">২০২০ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="arts" data-name="Freya Lindqvist">
-            <img class="teacher-photo" src="https://picsum.photos/id/29/200/200" alt="ফ্রেয়া লিন্ডকভিস্ট">
-            <span class="teacher-dept">কলা</span>
-            <h3>ফ্রেয়া লিন্ডকভিস্ট</h3>
-            <p>ব্ল্যাক-বক্স থিয়েটার প্রোগ্রাম পরিচালনা করেন, যেখানে প্রতি বছর তিনটি শিক্ষার্থী-রচিত নাটক মঞ্চস্থ হয়।
-            </p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৫ সাল থেকে</span>
+          <div class="teacher-card" data-dept="humanities" data-name="রতন কুমার বড়ুয়া Ratan Kumar Barua">
+            <img class="teacher-photo" src="images/people/ratan.jpg" alt="রতন কুমার বড়ুয়া" data-en-alt="Ratan Kumar Barua" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Business Studies">ব্যবসায় শিক্ষা</span>
+            <h3 data-en="Ratan Kumar Barua">রতন কুমার বড়ুয়া</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.Com (Accounting), B.Ed">সিনিয়র শিক্ষক · এম.কম (হিসাববিজ্ঞান), বি.এড</span>
+            <p data-en="Teaches accounting and finance. Business students all know him as Ratan Sir.">হিসাববিজ্ঞান আর ফিন্যান্স পড়ান। ব্যবসায় শিক্ষা শাখার শিক্ষার্থীরা তাঁকে 'রতন স্যার' নামেই চেনে।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2001">২০০১ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="arts" data-name="Malik Anderson">
-            <img class="teacher-photo" src="https://picsum.photos/id/30/200/200" alt="মালিক অ্যান্ডারসন">
-            <span class="teacher-dept">কলা</span>
-            <h3>মালিক অ্যান্ডারসন</h3>
-            <p>কয়ার ও স্কুল-পরবর্তী জ্যাজ এনসেম্বলের নেতৃত্ব দেন। ২০২৩ সালে গান লেখার ঐচ্ছিক কোর্স চালু করেন।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০১৮ সাল থেকে</span>
+          <div class="teacher-card" data-dept="humanities" data-name="হাসিনা মমতাজ Hasina Momtaz">
+            <img class="teacher-photo" src="images/people/hasina.jpg" alt="হাসিনা মমতাজ" data-en-alt="Hasina Momtaz" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Bangladesh &amp; Global Studies">বাংলাদেশ ও বিশ্বপরিচয়</span>
+            <h3 data-en="Hasina Momtaz">হাসিনা মমতাজ</h3>
+            <span class="teacher-title" data-en="Senior Teacher · M.A (History), B.Ed">সিনিয়র শিক্ষক · এম.এ (ইতিহাস), বি.এড</span>
+            <p data-en="Teaches Bangladesh &amp; Global Studies and set up the school&#x27;s Liberation War corner.">বাংলাদেশ ও বিশ্বপরিচয় পড়ান। স্কুলের মুক্তিযুদ্ধ কর্নারটা তাঁর হাতেই সাজানো।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2007">২০০৭ সাল থেকে এই স্কুলে</span>
           </div>
 
-          <div class="teacher-card" data-dept="sciences" data-name="Greta Lindholm">
-            <img class="teacher-photo" src="https://picsum.photos/id/31/200/200" alt="গ্রেটা লিন্ডহোম">
-            <span class="teacher-dept">বিজ্ঞান</span>
-            <h3>গ্রেটা লিন্ডহোম</h3>
-            <p>রসায়ন শিক্ষক এবং ক্যাম্পাসের সকল ল্যাবের নিরাপত্তা কর্মকর্তা।</p>
-            <span class="teacher-years">ব্রাইটল্যান্ডসে যোগদান ২০২২ সাল থেকে</span>
+          <div class="teacher-card" data-dept="humanities" data-name="মোঃ নাছির উদ্দিন Md. Nasir Uddin">
+            <img class="teacher-photo" src="images/people/nasir.jpg" alt="মোঃ নাছির উদ্দিন" data-en-alt="Md. Nasir Uddin" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Geography &amp; Environment">ভূগোল ও পরিবেশ</span>
+            <h3 data-en="Md. Nasir Uddin">মোঃ নাছির উদ্দিন</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · M.Sc (Geography)">সহকারী শিক্ষক · এম.এসসি (ভূগোল)</span>
+            <p data-en="Teaches geography and plans the yearly study tour.">ভূগোল পড়ান। প্রতি বছর শিক্ষা সফরের প্ল্যানটা তিনিই করেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2015">২০১৫ সাল থেকে এই স্কুলে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="others" data-name="মোঃ ফয়সাল করিম Md. Faisal Karim">
+            <img class="teacher-photo" src="images/people/faisal.jpg" alt="মোঃ ফয়সাল করিম" data-en-alt="Md. Faisal Karim" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="ICT">আইসিটি</span>
+            <h3 data-en="Md. Faisal Karim">মোঃ ফয়সাল করিম</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · B.Sc (CSE)">সহকারী শিক্ষক · বি.এসসি (সিএসই)</span>
+            <p data-en="Teaches ICT and runs the computer lab, plus the school&#x27;s SMS alerts and website.">আইসিটি পড়ান, কম্পিউটার ল্যাব চালান। স্কুলের এসএমএস আর ওয়েবসাইটও তিনিই দেখেন।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2017">২০১৭ সাল থেকে এই স্কুলে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="others" data-name="জান্নাতুল ফেরদৌস Jannatul Ferdous">
+            <img class="teacher-photo" src="images/people/jannatul.jpg" alt="জান্নাতুল ফেরদৌস" data-en-alt="Jannatul Ferdous" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Home Science">গার্হস্থ্য বিজ্ঞান</span>
+            <h3 data-en="Jannatul Ferdous">জান্নাতুল ফেরদৌস</h3>
+            <span class="teacher-title" data-en="Assistant Teacher · M.Sc (Home Economics)">সহকারী শিক্ষক · এম.এসসি (গার্হস্থ্য অর্থনীতি)</span>
+            <p data-en="Teaches home science and organises the annual pitha festival.">গার্হস্থ্য বিজ্ঞান পড়ান। বার্ষিক পিঠা উৎসবের আয়োজনও তাঁর দায়িত্বে।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2012">২০১২ সাল থেকে এই স্কুলে</span>
+          </div>
+
+          <div class="teacher-card" data-dept="others" data-name="মোঃ এরশাদ উল্লাহ Md. Ershad Ullah">
+            <img class="teacher-photo" src="images/people/ershad.jpg" alt="মোঃ এরশাদ উল্লাহ" data-en-alt="Md. Ershad Ullah" width="480" height="600" loading="lazy">
+            <span class="teacher-dept" data-en="Physical Education">শারীরিক শিক্ষা</span>
+            <h3 data-en="Md. Ershad Ullah">মোঃ এরশাদ উল্লাহ</h3>
+            <span class="teacher-title" data-en="PE Teacher · B.P.Ed">শরীরচর্চা শিক্ষক · বি.পি.এড</span>
+            <p data-en="Runs everything on the field, from morning assembly to sports day. Coaches the football team.">সকালের সমাবেশ থেকে বার্ষিক ক্রীড়া — মাঠের সব কাজ তাঁর হাতে। স্কুল ফুটবল দলের কোচ।</p>
+            <span class="teacher-years" data-en="At Sobujchhaya since 2010">২০১০ সাল থেকে এই স্কুলে</span>
           </div>
 
         </div>
 
-        <p class="no-results">আপনার অনুসন্ধানের সাথে মিলে যায় এমন কোনো শিক্ষক পাওয়া যায়নি। ভিন্ন নাম বা বিভাগ দিয়ে
-          চেষ্টা করুন।</p>
+        <p class="no-results" data-en="No teacher matches your search. Try another name or subject.">এই নামে কোনো শিক্ষক পাওয়া গেল না। অন্য নাম বা বিষয় দিয়ে চেষ্টা করুন।</p>
 
       </div>
     </section>
@@ -192,41 +299,41 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
-          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
-            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <h4 data-en="Sobujchhaya High School">সবুজছায়া উচ্চ বিদ্যালয়</h4>
+          <p data-en="A Class 6–10 high school in Agrabad, Chattogram, since 1986. National curriculum, Chattogram Board, MPO-listed.">১৯৮৬ সাল থেকে আগ্রাবাদ, চট্টগ্রামে ৬ষ্ঠ থেকে ১০ম শ্রেণির স্কুল। জাতীয় শিক্ষাক্রম, চট্টগ্রাম বোর্ড, এমপিওভুক্ত।</p>
           <form class="newsletter">
-            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
-            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+            <input type="email" placeholder="আপনার ইমেইল" data-en-placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm" data-en="Subscribe">খবর পেতে চাই</button>
           </form>
           <p class="newsletter-note form-note"></p>
         </div>
         <div>
-          <h4>অন্বেষণ করুন</h4>
-          <a href="history.html">আমাদের ইতিহাস</a>
-          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
-          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
-          <a href="results.html">পরীক্ষার ফলাফল</a>
+          <h4 data-en="Explore">ঘুরে দেখুন</h4>
+          <a href="history.html" data-en="Our history">আমাদের ইতিহাস</a>
+          <a href="teachers.html" data-en="Our teachers">শিক্ষকবৃন্দ</a>
+          <a href="students.html" data-en="Student life">শিক্ষার্থীদের জীবন</a>
+          <a href="results.html" data-en="SSC results">এসএসসি ফলাফল</a>
         </div>
         <div>
-          <h4>প্রতিষ্ঠান</h4>
-          <a href="about.html">আমাদের সম্পর্কে</a>
-          <a href="blog.html">ব্লগ</a>
-          <a href="contact.html">যোগাযোগ</a>
+          <h4 data-en="School">প্রতিষ্ঠান</h4>
+          <a href="about.html" data-en="About us">আমাদের কথা</a>
+          <a href="notice-details.html" data-en="Notice board">নোটিশ বোর্ড</a>
+          <a href="blog.html" data-en="News">স্কুলের খবর</a>
+          <a href="contact.html" data-en="Contact">যোগাযোগ</a>
         </div>
         <div>
-          <h4>ঠিকানা</h4>
-          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
-          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+          <h4 data-en="Address">ঠিকানা</h4>
+          <p data-en="House 15, Road 3, Agrabad R/A&lt;br&gt;Chattogram-4100">বাড়ি ১৫, রোড ৩, আগ্রাবাদ আবাসিক এলাকা<br>চট্টগ্রাম-৪১০০</p>
+          <p data-en="info@yourschool.edu.bd&lt;br&gt;01800-000000">info@yourschool.edu.bd<br>০১৮০০-০০০০০০</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
-        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+        <span data-en="© 2026 Sobujchhaya High School. All rights reserved.">© ২০২৬ সবুজছায়া উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span data-en="Demo site — replace the names, photos and contact details before going live.">ডেমো সাইট — চালু করার আগে নাম, ছবি আর যোগাযোগের তথ্য বদলে নিন।</span>
       </div>
     </div>
   </footer>
-  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
   <script src="script.js"></script>
 </body>
 

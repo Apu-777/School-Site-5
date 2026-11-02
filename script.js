@@ -1,4 +1,85 @@
-// Brightlands International School — shared site behavior
+// Sobujchhaya High School — shared site behavior
+
+/* ---------------------------------------------------------------
+   Language switcher (Bengali default, English optional)
+   - Bengali text is written directly in the HTML.
+   - English lives in data-en (inner HTML) and data-en-<attr>
+     (placeholder, alt, aria-label, title) on the same element.
+   - The choice is remembered in localStorage under "site-lang".
+---------------------------------------------------------------- */
+var SiteLang = (function () {
+  var KEY = "site-lang";
+  var ATTRS = ["placeholder", "alt", "aria-label", "title"];
+  var listeners = [];
+
+  function stored() {
+    try { return localStorage.getItem(KEY) === "en" ? "en" : "bn"; } catch (e) { return "bn"; }
+  }
+  function remember(lang) {
+    try { localStorage.setItem(KEY, lang); } catch (e) { /* storage unavailable: still switch for this page */ }
+  }
+
+  var current = "bn";
+
+  function apply(lang) {
+    current = lang;
+    var root = document.documentElement;
+    root.lang = lang;
+
+    document.querySelectorAll("[data-en]").forEach(function (el) {
+      if (el._bn === undefined) el._bn = el.innerHTML;
+      el.innerHTML = lang === "en" ? el.getAttribute("data-en") : el._bn;
+    });
+
+    ATTRS.forEach(function (attr) {
+      document.querySelectorAll("[data-en-" + attr + "]").forEach(function (el) {
+        var key = "_bn_" + attr;
+        if (el[key] === undefined) el[key] = el.getAttribute(attr) || "";
+        el.setAttribute(attr, lang === "en" ? el.getAttribute("data-en-" + attr) : el[key]);
+      });
+    });
+
+    document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+
+    listeners.forEach(function (fn) { fn(lang); });
+    root.classList.remove("lang-pending");
+  }
+
+  // Set a message on an element in both languages, showing the current one.
+  function setText(el, bn, en) {
+    el._bn = bn;
+    el.setAttribute("data-en", en);
+    el.innerHTML = current === "en" ? en : bn;
+  }
+
+  // Western digits -> Bengali digits when the page is in Bengali.
+  function num(value) {
+    var s = String(value);
+    return current === "en" ? s : s.replace(/[0-9]/g, function (d) { return "০১২৩৪৫৬৭৮৯"[d]; });
+  }
+
+  document.querySelectorAll(".lang-switch button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var lang = btn.getAttribute("data-lang");
+      if (lang === current) return;
+      remember(lang);
+      apply(lang);
+    });
+  });
+
+  // Bengali is already in the markup, so only switch when English was chosen.
+  if (stored() === "en") apply("en");
+  else document.documentElement.classList.remove("lang-pending");
+
+  return {
+    setText: setText,
+    num: num,
+    onChange: function (fn) { listeners.push(fn); },
+    current: function () { return current; }
+  };
+})();
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -66,9 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
           if (!startTime) startTime = ts;
           var progress = Math.min((ts - startTime) / duration, 1);
           var value = Math.floor(progress * target);
-          el.textContent = value + suffix;
+          el.textContent = SiteLang.num(value) + suffix;
           if (progress < 1) requestAnimationFrame(step);
-          else el.textContent = target + suffix;
+          else { el.textContent = SiteLang.num(target) + suffix; el._done = true; }
         }
         requestAnimationFrame(step);
         counterObserver.unobserve(el);
@@ -76,6 +157,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { threshold: 0.4 });
     counters.forEach(function (el) { counterObserver.observe(el); });
   }
+  function renderCounters() {
+    counters.forEach(function (el) {
+      var suffix = el.getAttribute("data-suffix") || "";
+      el.textContent = el._done ? SiteLang.num(el.getAttribute("data-count")) + suffix : SiteLang.num(0);
+    });
+  }
+  renderCounters();
+  SiteLang.onChange(renderCounters);
 
   /* ---------- Curriculum tabs ---------- */
   var tabButtons = document.querySelectorAll(".tab-btn");
@@ -105,7 +194,11 @@ document.addEventListener("DOMContentLoaded", function () {
     slides.forEach(function (_, i) {
       var dot = document.createElement("button");
       if (i === 0) dot.classList.add("active");
-      dot.setAttribute("aria-label", "Go to testimonial " + (i + 1));
+      function label() {
+        dot.setAttribute("aria-label", SiteLang.current() === "en" ? "Go to testimonial " + (i + 1) : SiteLang.num(i + 1) + " নম্বর মতামত");
+      }
+      label();
+      SiteLang.onChange(label);
       dot.addEventListener("click", function () { goTo(i); resetTimer(); });
       dotsWrap.appendChild(dot);
     });
@@ -252,9 +345,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       var status = contactForm.querySelector(".form-status");
       if (status) {
-        status.textContent = valid
-          ? "ধন্যবাদ — এটি একটি ডেমো ফর্ম, তাই এখনো কিছু প্রকৃতপক্ষে পাঠানো হয়নি।"
-          : "অনুগ্রহ করে চিহ্নিত ঘরগুলো সঠিকভাবে পূরণ করুন।";
+        if (valid) {
+          SiteLang.setText(status,
+            "ধন্যবাদ! এটা একটা ডেমো ফর্ম, তাই আসলে কিছু পাঠানো হয়নি।",
+            "Thanks — this is a demo form, so nothing was actually sent.");
+        } else {
+          SiteLang.setText(status,
+            "লাল দাগ দেওয়া ঘরগুলো ঠিকমতো পূরণ করুন।",
+            "Please fill in the highlighted fields correctly.");
+        }
         status.classList.toggle("success", valid);
       }
     });
@@ -268,7 +367,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var input = newsletterForm.querySelector("input");
       var note = newsletterForm.parentElement.querySelector(".newsletter-note");
       if (input && input.value.trim() && note) {
-        note.textContent = "সাবস্ক্রাইব করার জন্য ধন্যবাদ — এটি শুধু ডেমো, কোনো ইমেইল পাঠানো হয়নি।";
+        SiteLang.setText(note,
+          "ধন্যবাদ! এটা শুধু ডেমো, কোনো ইমেইল পাঠানো হয়নি।",
+          "Thanks for subscribing — this is only a demo, no email was sent.");
         input.value = "";
       }
     });
