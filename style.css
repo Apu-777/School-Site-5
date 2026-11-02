@@ -534,7 +534,7 @@ p {
   display: flex;
   align-items: center;
   background: var(--coral);
-  color: #fff;
+  color: #000000;
   overflow: hidden;
 }
 
@@ -591,6 +591,31 @@ p {
   .announcement-label {
     text-align: center;
   }
+}
+
+/* ---------- leadership messages (two cards, large portraits) ---------- */
+.message-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.2rem; }
+.message-card{
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+}
+.message-photo{ height: 340px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; }
+.message-photo-teal{ background: linear-gradient(160deg, #0F5257, #17707A); }
+.message-photo-warm{ background: linear-gradient(160deg, #FF6B4A, #FFC145); }
+.message-photo svg{ height: 100%; width: auto; }
+.message-photo img{ width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.message-body{ padding: 1.8rem 2rem 2rem; display: flex; flex-direction: column; flex: 1; }
+.message-role{ font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--coral); display: block; margin-bottom: 0.4rem; }
+.message-body h3{ font-size: 1.3rem; margin: 0 0 1rem; }
+.message-body p{ margin-bottom: 1rem; }
+.message-sign{
+  margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft);
+}
+.message-sign strong{ display: block; color: var(--ink); font-size: 0.95rem; margin-bottom: 0.1rem; }
+@media (max-width: 720px){
+  .message-grid{ grid-template-columns: 1fr; }
+  .message-photo{ height: 300px; }
 }
 
 /* ---------- notice board (home page) ---------- */
