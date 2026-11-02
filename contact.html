@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>যোগাযোগ — ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</title>
+  <script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+  <title data-en="Contact — Sobujchhaya High School">যোগাযোগ — সবুজছায়া উচ্চ বিদ্যালয়</title>
   <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -16,38 +18,42 @@
 <body>
 
   <div class="notice-bar">
-    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
-        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
-    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+    <span data-en="&lt;strong&gt;Admissions open&lt;/strong&gt; — forms for Class 6 and Class 9 (2027 session) are now available. &lt;a href=&quot;notice-details.html#admission-2027&quot; style=&quot;text-decoration:underline;&quot;&gt;See details →&lt;/a&gt;"><strong>ভর্তি চলছে</strong> — ২০২৭ সালের ৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম দেওয়া হচ্ছে। <a href="notice-details.html#admission-2027"
+        style="text-decoration:underline;">বিস্তারিত দেখুন →</a></span>
+    <button class="notice-close" aria-label="বার্তাটা বন্ধ করুন" data-en-aria-label="Close this message">&times;</button>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="17" cy="17" r="16" fill="#0F5257" />
           <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+        <span class="brand-name" data-en="Sobujchhaya&lt;br&gt;High School">সবুজছায়া<br>উচ্চ বিদ্যালয়</span>
       </a>
-      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন" data-en-aria-label="Open/close menu"><span></span></button>
       <nav class="main-nav">
-        <a href="index.html">হোম</a>
-        <a href="history.html">ইতিহাস</a>
-        <a href="teachers.html">শিক্ষকবৃন্দ</a>
-        <a href="students.html">শিক্ষার্থীরা</a>
-        <a href="results.html">পরীক্ষার ফলাফল</a>
-        <a href="about.html">পরিচিতি</a>
-        <a href="blog.html">ব্লগ</a>
-        <a href="contact.html" class="active">যোগাযোগ</a>
+        <a href="index.html" data-en="Home">হোম</a>
+        <a href="history.html" data-en="History">ইতিহাস</a>
+        <a href="teachers.html" data-en="Teachers">শিক্ষকবৃন্দ</a>
+        <a href="students.html" data-en="Students">শিক্ষার্থীরা</a>
+        <a href="results.html" data-en="Results">ফলাফল</a>
+        <a href="about.html" data-en="About">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর</a>
+        <a href="contact.html" class="active" data-en="Contact">যোগাযোগ</a>
       </nav>
-      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+      <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন" data-en-aria-label="Choose language">
+        <button type="button" data-lang="bn" lang="bn" aria-pressed="true">বাংলা</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="theme-toggle" aria-label="ডার্ক মোড চালু/বন্ধ" data-en-aria-label="Toggle dark mode">
         <span class="icon-light">&#9789;</span>
         <span class="icon-dark">&#9728;</span>
       </button>
-      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta" data-en="Admissions">ভর্তি তথ্য</a>
     </div>
   </header>
 
@@ -55,10 +61,9 @@
 
     <section class="page-hero">
       <div class="wrap">
-        <div class="breadcrumb"><a href="index.html">হোম</a> / যোগাযোগ</div>
-        <h1>ভর্তি অফিসের সাথে কথা বলুন।</h1>
-        <p>আপনি ক্যাম্পাস ঘুরে দেখতে চান, আবেদন করতে চান, অথবা শুধু জানতে চান — আমাদের সাথে যোগাযোগের দ্রুততম উপায় নিচে
-          দেওয়া হলো।</p>
+        <div class="breadcrumb"><a href="index.html" data-en="Home">হোম</a> / <span data-en="Contact">যোগাযোগ</span></div>
+        <h1 data-en="Talk to the school office.">স্কুল অফিসে কথা বলুন।</h1>
+        <p data-en="Want to visit, ask about admission, or just have a question? Here's the quickest way to reach us.">স্কুল দেখতে আসতে চান, ভর্তির খোঁজ নিতে চান, বা এমনিই কিছু জানার আছে? আমাদের কাছে পৌঁছানোর সহজ উপায়গুলো নিচে দিলাম।</p>
       </div>
     </section>
 
@@ -66,78 +71,77 @@
       <div class="wrap contact-grid">
 
         <div>
-          <h2>যোগাযোগ করুন</h2>
+          <h2 data-en="Get in touch">যোগাযোগ</h2>
           <div class="contact-info-card">
             <span class="icon">@</span>
             <div>
-              <h3>ইমেইল</h3>
-              <p>admissions@brightlands.example</p>
+              <h3 data-en="Email">ইমেইল</h3>
+              <p>info@yourschool.edu.bd</p>
             </div>
           </div>
           <div class="contact-info-card">
             <span class="icon">&#9742;</span>
             <div>
-              <h3>ফোন</h3>
-              <p>(360) 555-0199, সোম–শুক্র, সকাল ৮টা–বিকাল ৪টা</p>
+              <h3 data-en="Phone">ফোন</h3>
+              <p data-en="01800-000000 (office), Sunday–Thursday, 9 am–3 pm">০১৮০০-০০০০০০ (অফিস), রবি–বৃহস্পতি, সকাল ৯টা–বিকেল ৩টা</p>
             </div>
           </div>
           <div class="contact-info-card">
             <span class="icon">&#9673;</span>
             <div>
-              <h3>ঠিকানা</h3>
-              <p>14 Lakeview Terrace, Ellery Bay, WA 98110</p>
+              <h3 data-en="Address">ঠিকানা</h3>
+              <p data-en="House 15, Road 3, Agrabad R/A, Chattogram-4100">বাড়ি ১৫, রোড ৩, আগ্রাবাদ আবাসিক এলাকা, চট্টগ্রাম-৪১০০</p>
             </div>
           </div>
           <div class="contact-info-card">
             <span class="icon">&#128337;</span>
             <div>
-              <h3>অফিস সময়</h3>
-              <p>সোমবার–শুক্রবার, সকাল ৮টা–বিকাল ৪টা। ক্যাম্পাস ভ্রমণ প্রতি মঙ্গল ও বৃহস্পতিবার সকালে।</p>
+              <h3 data-en="Office hours">অফিস সময়</h3>
+              <p data-en="Sunday to Thursday, 9 am–3 pm. Closed Friday and Saturday.">রবি থেকে বৃহস্পতিবার, সকাল ৯টা–বিকেল ৩টা। শুক্র ও শনিবার বন্ধ।</p>
             </div>
           </div>
 
-          <div class="map-box">
-            মানচিত্র এমবেড প্লেসহোল্ডার — এখানে 14 Lakeview Terrace, Ellery Bay, WA-এর গুগল ম্যাপস বা ওপেনস্ট্রিটম্যাপ
-            এমবেড যুক্ত করুন।
+          <div class="map-box" data-en="Map placeholder — embed a Google Maps or OpenStreetMap view of the school here.">
+            ম্যাপের জায়গা — এখানে স্কুলের গুগল ম্যাপ বা ওপেনস্ট্রিটম্যাপ বসিয়ে দিন।
           </div>
         </div>
 
         <div>
-          <h2>বার্তা পাঠান</h2>
+          <h2 data-en="Send a message">বার্তা পাঠান</h2>
           <form class="contact-form" novalidate>
             <div class="form-grid">
               <div class="form-field">
-                <label for="name">পূর্ণ নাম</label>
-                <input type="text" id="name" name="name" placeholder="জর্ডান কেসি" required>
-                <span class="field-error">অনুগ্রহ করে আপনার নাম লিখুন।</span>
+                <label for="name" data-en="Your name">আপনার নাম</label>
+                <input type="text" id="name" name="name" placeholder="যেমন: রাকিব হাসান" data-en-placeholder="e.g. Rakib Hasan" required>
+                <span class="field-error" data-en="Please enter your name.">নামটা লিখুন।</span>
               </div>
               <div class="form-field">
-                <label for="email">ইমেইল ঠিকানা</label>
-                <input type="email" id="email" name="email" placeholder="jordan@example.com" required>
-                <span class="field-error">অনুগ্রহ করে একটি সঠিক ইমেইল ঠিকানা লিখুন।</span>
+                <label for="email" data-en="Email">ইমেইল</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <span class="field-error" data-en="Please enter a valid email address.">সঠিক ইমেইল ঠিকানা দিন।</span>
               </div>
               <div class="form-field">
-                <label for="phone">ফোন (ঐচ্ছিক)</label>
-                <input type="tel" id="phone" name="phone" placeholder="(360) 555-0100">
+                <label for="phone" data-en="Mobile (optional)">মোবাইল (না দিলেও চলবে)</label>
+                <input type="tel" id="phone" name="phone" placeholder="০১৮XXXXXXXX" data-en-placeholder="018XXXXXXXX">
               </div>
               <div class="form-field">
-                <label for="reason">আপনি যে বিষয়ে যোগাযোগ করছেন</label>
+                <label for="reason" data-en="What's it about?">কী বিষয়ে?</label>
                 <select id="reason" name="reason">
-                  <option>ভর্তি ও নিবন্ধন</option>
-                  <option>ক্যাম্পাস ভ্রমণের অনুরোধ</option>
-                  <option>পরীক্ষার ফলাফল / রেজিস্ট্রার</option>
-                  <option>সাধারণ প্রশ্ন</option>
+                  <option data-en="Admission">ভর্তি</option>
+                  <option data-en="Visiting the school">স্কুল দেখতে আসা</option>
+                  <option data-en="Results / certificates">ফলাফল / সার্টিফিকেট</option>
+                  <option data-en="Something else">অন্য কিছু</option>
                 </select>
               </div>
               <div class="form-field full">
-                <label for="message">বার্তা</label>
-                <textarea id="message" name="message" rows="5" placeholder="আপনি কী খুঁজছেন তা সংক্ষেপে লিখুন..."
+                <label for="message" data-en="Message">বার্তা</label>
+                <textarea id="message" name="message" rows="5" placeholder="কী জানতে চান, সংক্ষেপে লিখুন..." data-en-placeholder="Tell us briefly what you'd like to know..."
                   required></textarea>
-                <span class="field-error">অনুগ্রহ করে একটি সংক্ষিপ্ত বার্তা লিখুন।</span>
+                <span class="field-error" data-en="Please write a short message.">ছোট করে হলেও কিছু লিখুন।</span>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">বার্তা পাঠান</button>
-            <p class="form-note form-status">সাধারণত দুই কার্যদিবসের মধ্যে আমরা উত্তর দিই।</p>
+            <button type="submit" class="btn btn-primary" data-en="Send message">পাঠিয়ে দিন</button>
+            <p class="form-note form-status" data-en="We usually reply within two working days.">সাধারণত দুই কর্মদিবসের মধ্যে উত্তর দিই।</p>
           </form>
         </div>
 
@@ -150,41 +154,41 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
-          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
-            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <h4 data-en="Sobujchhaya High School">সবুজছায়া উচ্চ বিদ্যালয়</h4>
+          <p data-en="A Class 6–10 high school in Agrabad, Chattogram, since 1986. National curriculum, Chattogram Board, MPO-listed.">১৯৮৬ সাল থেকে আগ্রাবাদ, চট্টগ্রামে ৬ষ্ঠ থেকে ১০ম শ্রেণির স্কুল। জাতীয় শিক্ষাক্রম, চট্টগ্রাম বোর্ড, এমপিওভুক্ত।</p>
           <form class="newsletter">
-            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
-            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+            <input type="email" placeholder="আপনার ইমেইল" data-en-placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm" data-en="Subscribe">খবর পেতে চাই</button>
           </form>
           <p class="newsletter-note form-note"></p>
         </div>
         <div>
-          <h4>অন্বেষণ করুন</h4>
-          <a href="history.html">আমাদের ইতিহাস</a>
-          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
-          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
-          <a href="results.html">পরীক্ষার ফলাফল</a>
+          <h4 data-en="Explore">ঘুরে দেখুন</h4>
+          <a href="history.html" data-en="Our history">আমাদের ইতিহাস</a>
+          <a href="teachers.html" data-en="Our teachers">শিক্ষকবৃন্দ</a>
+          <a href="students.html" data-en="Student life">শিক্ষার্থীদের জীবন</a>
+          <a href="results.html" data-en="SSC results">এসএসসি ফলাফল</a>
         </div>
         <div>
-          <h4>প্রতিষ্ঠান</h4>
-          <a href="about.html">আমাদের সম্পর্কে</a>
-          <a href="blog.html">ব্লগ</a>
-          <a href="contact.html">যোগাযোগ</a>
+          <h4 data-en="School">প্রতিষ্ঠান</h4>
+          <a href="about.html" data-en="About us">আমাদের কথা</a>
+          <a href="notice-details.html" data-en="Notice board">নোটিশ বোর্ড</a>
+          <a href="blog.html" data-en="News">স্কুলের খবর</a>
+          <a href="contact.html" data-en="Contact">যোগাযোগ</a>
         </div>
         <div>
-          <h4>ঠিকানা</h4>
-          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
-          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+          <h4 data-en="Address">ঠিকানা</h4>
+          <p data-en="House 15, Road 3, Agrabad R/A&lt;br&gt;Chattogram-4100">বাড়ি ১৫, রোড ৩, আগ্রাবাদ আবাসিক এলাকা<br>চট্টগ্রাম-৪১০০</p>
+          <p data-en="info@yourschool.edu.bd&lt;br&gt;01800-000000">info@yourschool.edu.bd<br>০১৮০০-০০০০০০</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
-        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+        <span data-en="© 2026 Sobujchhaya High School. All rights reserved.">© ২০২৬ সবুজছায়া উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span data-en="Demo site — replace the names, photos and contact details before going live.">ডেমো সাইট — চালু করার আগে নাম, ছবি আর যোগাযোগের তথ্য বদলে নিন।</span>
       </div>
     </div>
   </footer>
-  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
   <script src="script.js"></script>
 </body>
 

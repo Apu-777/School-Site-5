@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল — কৌতূহলী মন, বিশ্বনাগরিক</title>
+  <script>try{if(localStorage.getItem("site-lang")==="en"){document.documentElement.lang="en";document.documentElement.classList.add("lang-pending");}}catch(e){}</script>
+  <title data-en="Sobujchhaya High School — Agrabad, Chattogram">সবুজছায়া উচ্চ বিদ্যালয় — আগ্রাবাদ, চট্টগ্রাম</title>
   <script>(function () {try {var t = localStorage.getItem('bl-theme'); if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');} catch (e) { } })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -16,38 +18,42 @@
 <body>
 
   <div class="notice-bar">
-    <span><strong>ভর্তি চলছে</strong> — ২০২৭ শিক্ষাবর্ষের আবেদন গ্রহণ শুরু হয়েছে। <a href="contact.html"
-        style="text-decoration:underline;">আজই আবেদন করুন →</a></span>
-    <button class="notice-close" aria-label="বার্তা বন্ধ করুন">&times;</button>
+    <span data-en="&lt;strong&gt;Admissions open&lt;/strong&gt; — forms for Class 6 and Class 9 (2027 session) are now available. &lt;a href=&quot;notice-details.html#admission-2027&quot; style=&quot;text-decoration:underline;&quot;&gt;See details →&lt;/a&gt;"><strong>ভর্তি চলছে</strong> — ২০২৭ সালের ৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম দেওয়া হচ্ছে। <a href="notice-details.html#admission-2027"
+        style="text-decoration:underline;">বিস্তারিত দেখুন →</a></span>
+    <button class="notice-close" aria-label="বার্তাটা বন্ধ করুন" data-en-aria-label="Close this message">&times;</button>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="17" cy="17" r="16" fill="#0F5257" />
           <path d="M9 20L17 9L25 20" stroke="#FFC145" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M12.5 24.5L17 20L21.5 24.5" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-        <span class="brand-name">ব্রাইটল্যান্ডস<br>ইন্টারন্যাশনাল</span>
+        <span class="brand-name" data-en="Sobujchhaya&lt;br&gt;High School">সবুজছায়া<br>উচ্চ বিদ্যালয়</span>
       </a>
-      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন"><span></span></button>
+      <button class="nav-toggle" aria-label="মেনু খুলুন/বন্ধ করুন" data-en-aria-label="Open/close menu"><span></span></button>
       <nav class="main-nav">
-        <a href="index.html" class="active">হোম</a>
-        <a href="history.html">ইতিহাস</a>
-        <a href="teachers.html">শিক্ষকবৃন্দ</a>
-        <a href="students.html">শিক্ষার্থীরা</a>
-        <a href="results.html">পরীক্ষার ফলাফল</a>
-        <a href="about.html">পরিচিতি</a>
-        <a href="blog.html">ব্লগ</a>
-        <a href="contact.html">যোগাযোগ</a>
+        <a href="index.html" class="active" data-en="Home">হোম</a>
+        <a href="history.html" data-en="History">ইতিহাস</a>
+        <a href="teachers.html" data-en="Teachers">শিক্ষকবৃন্দ</a>
+        <a href="students.html" data-en="Students">শিক্ষার্থীরা</a>
+        <a href="results.html" data-en="Results">ফলাফল</a>
+        <a href="about.html" data-en="About">আমাদের কথা</a>
+        <a href="blog.html" data-en="News">খবর</a>
+        <a href="contact.html" data-en="Contact">যোগাযোগ</a>
       </nav>
-      <button class="theme-toggle" aria-label="ডার্ক মোড টগল করুন">
+      <div class="lang-switch" role="group" aria-label="ভাষা বেছে নিন" data-en-aria-label="Choose language">
+        <button type="button" data-lang="bn" lang="bn" aria-pressed="true">বাংলা</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="theme-toggle" aria-label="ডার্ক মোড চালু/বন্ধ" data-en-aria-label="Toggle dark mode">
         <span class="icon-light">&#9789;</span>
         <span class="icon-dark">&#9728;</span>
       </button>
-      <a href="contact.html" class="btn btn-primary btn-sm">অনুসন্ধান করুন</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta" data-en="Admissions">ভর্তি তথ্য</a>
     </div>
   </header>
 
@@ -58,33 +64,30 @@
       <div class="hero-blob"></div>
       <div class="wrap hero-grid">
         <div class="reveal in-view">
-          <span class="eyebrow">প্লে-গ্রুপ – দ্বাদশ শ্রেণি &middot; প্রতিষ্ঠিত ১৯৯২</span>
-          <h1>যেখানে কৌতূহলী মন হয়ে ওঠে <em>বিশ্বনাগরিক</em>।</h1>
-          <p class="hero-copy">ব্রাইটল্যান্ডস আন্তর্জাতিক মানের পাঠ্যক্রমকে ছোট, আলোচনাভিত্তিক শ্রেণিকক্ষের সাথে মিলিয়ে
-            গড়ে তুলেছে এক অনন্য শিক্ষাপরিবেশ — যাতে প্রতিটি শিক্ষার্থী সমালোচনামূলকভাবে চিন্তা করতে, বিভিন্ন সংস্কৃতির
-            মানুষের সাথে কাজ করতে এবং কৌতূহল নিয়ে এগিয়ে যেতে শেখে।</p>
+          <span class="eyebrow" data-en="Class 6–10 &amp;middot; Since 1986 &amp;middot; Chattogram Board">৬ষ্ঠ–১০ম শ্রেণি &middot; প্রতিষ্ঠা ১৯৮৬ &middot; চট্টগ্রাম বোর্ড</span>
+          <h1 data-en="Where children learn to &lt;em&gt;love&lt;/em&gt; school.">যেখানে স্কুলে আসতে <em>ভালো লাগে</em>।</h1>
+          <p class="hero-copy" data-en="For almost forty years, Agrabad families have trusted us with their children. We keep classes small, know every student by name, and make sure no one is left behind just because they need a little extra help.">প্রায় চল্লিশ বছর ধরে আগ্রাবাদের মানুষ তাঁদের ছেলেমেয়েদের আমাদের হাতে তুলে দিচ্ছেন। আমাদের ক্লাস ছোট, প্রতিটা শিক্ষার্থীকে আমরা নাম ধরে চিনি — আর একটু বাড়তি যত্ন লাগে বলে কেউ পিছিয়ে পড়ে না।</p>
           <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary">ক্যাম্পাস ভ্রমণের সময় নিন</a>
-            <a href="about.html" class="btn btn-ghost">কেন ব্রাইটল্যান্ডস →</a>
+            <a href="contact.html" class="btn btn-primary" data-en="Visit the school">স্কুল ঘুরে দেখতে আসুন</a>
+            <a href="about.html" class="btn btn-ghost" data-en="Why Sobujchhaya →">কেন সবুজছায়া →</a>
           </div>
         </div>
         <div class="hero-media reveal in-view">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMr_uZvetCSv9INnPSyxncSfxoQifOdWIx5_9KSjF_A&s=10" alt="ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল ক্যাম্পাস">
+          <img src="images/hero.jpg" alt="ছাতা হাতে হাসিমুখে স্কুলের ছাত্ররা" data-en-alt="Smiling students with umbrellas on their way to school" width="960" height="718">
           <div class="hero-float-card">
-            <strong>৪২</strong>
-            দেশের শিক্ষার্থী আমাদের ক্যাম্পাসে প্রতিনিধিত্ব করে
+            <strong data-en="112">১১২</strong>
+            <span data-en="students got GPA-5 in SSC 2026">জন শিক্ষার্থী ২০২৬ সালের এসএসসিতে জিপিএ-৫ পেয়েছে</span>
           </div>
         </div>
       </div>
       <div class="wrap">
         <div class="stats-bar">
-          <div class="stat"><span class="stat-num" data-count="1200" data-suffix="+">0</span><span
-              class="stat-label">ভর্তিকৃত শিক্ষার্থী</span></div>
-          <div class="stat"><span class="stat-num" data-count="42">0</span><span class="stat-label">প্রতিনিধিত্বকারী
-              দেশ</span></div>
-          <div class="stat"><span class="stat-num" data-count="97" data-suffix="%">0</span><span
-              class="stat-label">কলেজে ভর্তির হার</span></div>
-          <div class="stat"><span class="stat-num" data-count="85">0</span><span class="stat-label">শিক্ষক সদস্য</span>
+          <div class="stat"><span class="stat-num" data-count="1400" data-suffix="+">০</span><span
+              class="stat-label" data-en="Students">শিক্ষার্থী</span></div>
+          <div class="stat"><span class="stat-num" data-count="48">০</span><span class="stat-label" data-en="Teachers">শিক্ষক</span></div>
+          <div class="stat"><span class="stat-num" data-count="98" data-suffix="%">০</span><span
+              class="stat-label" data-en="SSC pass rate, 2026">২০২৬ এসএসসিতে পাসের হার</span></div>
+          <div class="stat"><span class="stat-num" data-count="40">০</span><span class="stat-label" data-en="Years in Agrabad">বছর ধরে আগ্রাবাদে</span>
           </div>
         </div>
       </div>
@@ -92,110 +95,57 @@
 
     <!-- URGENT ANNOUNCEMENT TICKER -->
     <section class="announcement-bar">
-      <span class="announcement-label">জরুরি ঘোষণা</span>
+      <span class="announcement-label" data-en="Notice">জরুরি নোটিশ</span>
       <div class="marquee">
         <div class="marquee-track">
-          <span>২০২৭ শিক্ষাবর্ষের ভর্তি আবেদন এখন খোলা &nbsp;•&nbsp; আর্লি ডিসিশন আবেদনের শেষ তারিখ ১৫ নভেম্বর
-            &nbsp;•&nbsp; অভিভাবক-শিক্ষক সভা অনুষ্ঠিত হবে ২১-২২ সেপ্টেম্বর &nbsp;•&nbsp; ১ সেপ্টেম্বর লেবার ডে উপলক্ষে
-            ক্যাম্পাস বন্ধ থাকবে &nbsp;•&nbsp; শরৎকালীন ক্রীড়া বাছাই শুরু হচ্ছে ৮ সেপ্টেম্বর থেকে</span>
-          <span aria-hidden="true">২০২৭ শিক্ষাবর্ষের ভর্তি আবেদন এখন খোলা &nbsp;•&nbsp; আর্লি ডিসিশন আবেদনের শেষ তারিখ
-            ১৫ নভেম্বর &nbsp;•&nbsp; অভিভাবক-শিক্ষক সভা অনুষ্ঠিত হবে ২১-২২ সেপ্টেম্বর &nbsp;•&nbsp; ১ সেপ্টেম্বর লেবার
-            ডে উপলক্ষে ক্যাম্পাস বন্ধ থাকবে &nbsp;•&nbsp; শরৎকালীন ক্রীড়া বাছাই শুরু হচ্ছে ৮ সেপ্টেম্বর থেকে</span>
+          <span data-en="Class 6 and 9 admission forms are available from the office &amp;nbsp;•&amp;nbsp; Annual exams start 23 November &amp;nbsp;•&amp;nbsp; Guardians' meeting on Saturday, 14 November &amp;nbsp;•&amp;nbsp; Sports day entries close 15 November &amp;nbsp;•&amp;nbsp; Victory Day parade on 16 December, 8 am">৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম অফিসে পাওয়া যাচ্ছে &nbsp;•&nbsp; বার্ষিক পরীক্ষা শুরু ২৩ নভেম্বর &nbsp;•&nbsp; অভিভাবক সমাবেশ ১৪ নভেম্বর, শনিবার &nbsp;•&nbsp; বার্ষিক ক্রীড়ায় নাম জমার শেষ দিন ১৫ নভেম্বর &nbsp;•&nbsp; ১৬ ডিসেম্বর সকাল ৮টায় বিজয় দিবসের কুচকাওয়াজ</span>
+          <span aria-hidden="true" data-en="Class 6 and 9 admission forms are available from the office &amp;nbsp;•&amp;nbsp; Annual exams start 23 November &amp;nbsp;•&amp;nbsp; Guardians' meeting on Saturday, 14 November &amp;nbsp;•&amp;nbsp; Sports day entries close 15 November &amp;nbsp;•&amp;nbsp; Victory Day parade on 16 December, 8 am">৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম অফিসে পাওয়া যাচ্ছে &nbsp;•&nbsp; বার্ষিক পরীক্ষা শুরু ২৩ নভেম্বর &nbsp;•&nbsp; অভিভাবক সমাবেশ ১৪ নভেম্বর, শনিবার &nbsp;•&nbsp; বার্ষিক ক্রীড়ায় নাম জমার শেষ দিন ১৫ নভেম্বর &nbsp;•&nbsp; ১৬ ডিসেম্বর সকাল ৮টায় বিজয় দিবসের কুচকাওয়াজ</span>
         </div>
       </div>
     </section>
 
-        <!-- LEADERSHIP MESSAGES -->
-  <section class="section">
-    <div class="wrap">
-      <span class="eyebrow center">নেতৃত্বের বার্তা</span>
-      <h2 class="center">আমাদের কর্ণধারদের কথা।</h2>
-      <div class="message-grid reveal">
+    <!-- LEADERSHIP MESSAGES -->
+    <section class="section" id="messages">
+      <div class="wrap">
+        <span class="eyebrow center" data-en="A word from us">দুটো কথা</span>
+        <h2 class="center" data-en="From our chairman and headmaster.">সভাপতি ও প্রধান শিক্ষকের কথা।</h2>
+        <div class="message-grid reveal">
 
-        <!-- বাম কার্ড: প্রধান শিক্ষক -->
-        <div class="message-card">
-          <div class="message-photo message-photo-teal">
-            <svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="প্রধান শিক্ষকের ছবি">
-              <circle cx="150" cy="175" r="130" fill="rgba(255,255,255,0.10)"/>
-              <path d="M20 320 C20 250 75 224 150 224 C225 224 280 250 280 320 Z" fill="#14284A"/>
-              <path d="M116 228 L150 288 L184 228 Z" fill="#F4F4F2"/>
-              <path d="M116 228 L150 288 L118 320 L84 248 Z" fill="#0E1D38"/>
-              <path d="M184 228 L150 288 L182 320 L216 248 Z" fill="#0E1D38"/>
-              <path d="M143 244 L157 244 L159 256 L141 256 Z" fill="#A63A32"/>
-              <path d="M141 256 L159 256 L164 302 L150 314 L136 302 Z" fill="#A63A32"/>
-              <path d="M131 190 L169 190 L169 234 Q150 248 131 234 Z" fill="#C99572"/>
-              <ellipse cx="98" cy="152" rx="8" ry="14" fill="#D9A67F"/>
-              <ellipse cx="202" cy="152" rx="8" ry="14" fill="#D9A67F"/>
-              <ellipse cx="150" cy="147" rx="52" ry="62" fill="#E0AC85"/>
-              <path d="M97 138 C93 92 118 76 150 76 C183 76 208 92 203 138 C196 114 178 103 150 103 C122 103 104 114 97 138 Z" fill="#2B2623"/>
-              <path d="M119 129 Q131 122 145 128" stroke="#2B2623" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-              <path d="M155 128 Q169 122 181 129" stroke="#2B2623" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-              <circle cx="131" cy="146" r="4.5" fill="#2B2623"/>
-              <circle cx="169" cy="146" r="4.5" fill="#2B2623"/>
-              <rect x="111" y="133" width="40" height="28" rx="10" fill="none" stroke="#3A2F2A" stroke-width="3"/>
-              <rect x="149" y="133" width="40" height="28" rx="10" fill="none" stroke="#3A2F2A" stroke-width="3"/>
-              <path d="M151 145 L149 145" stroke="#3A2F2A" stroke-width="3"/>
-              <path d="M150 152 Q145 168 152 171" stroke="#B98560" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <path d="M131 182 Q150 197 169 182" stroke="#8A4B3B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="message-body">
-            <span class="message-role">প্রধান শিক্ষক</span>
-            <h3>প্রধান শিক্ষকের বাণী</h3>
-            <p>প্রিয় অভিভাবক ও শিক্ষার্থীবৃন্দ, ব্রাইটল্যান্ডসে আপনাদের স্বাগত জানাই। আমরা বিশ্বাস করি, প্রতিটি শিশুর মধ্যেই কৌতূহল ও সম্ভাবনার এক অনন্য আলো রয়েছে। আমাদের দায়িত্ব সেই আলোকে সঠিক পথে এগিয়ে নিতে সাহায্য করা।</p>
-            <p>ছোট শ্রেণিকক্ষ, যত্নশীল শিক্ষক এবং খোলামেলা আলোচনার পরিবেশে আমরা শিক্ষার্থীদের শেখাই কীভাবে প্রশ্ন করতে হয়, কীভাবে নিজের মত প্রকাশ করতে হয় এবং অন্যের মতকে সম্মান করতে হয়। আপনাদের আস্থাই আমাদের সবচেয়ে বড় শক্তি।</p>
-            <div class="message-sign">
-              <strong>হেলেনা নোভাক</strong>
-              প্রধান শিক্ষক, ব্রাইটল্যান্ডস ইন্টারন্যাশনাল
+          <div class="message-card">
+            <div class="message-photo message-photo-warm">
+              <img src="images/people/sobhapoti.jpg" alt="আলহাজ্ব মোঃ নুরুল আবসার" data-en-alt="Alhaj Md. Nurul Absar" width="480" height="600" loading="lazy">
+            </div>
+            <div class="message-body">
+              <span class="message-role" data-en="Chairman">সভাপতি</span>
+              <h3 data-en="From the chairman">সভাপতির কথা</h3>
+              <p data-en="In 1986, a few of us in the neighbourhood started this school in a tin-roofed room with seventy students. Today it has more than fourteen hundred. That happened because guardians trusted us and teachers gave their all.">১৯৮৬ সালে পাড়ার কয়েকজন মিলে একটা টিনের ঘরে সত্তরজন ছাত্রছাত্রী নিয়ে স্কুলটা শুরু করেছিলাম। আজ এখানে চৌদ্দশোর বেশি শিক্ষার্থী। এটা সম্ভব হয়েছে অভিভাবকদের ভরসা আর শিক্ষকদের খাটুনির জোরে।</p>
+              <p data-en="As chairman of the managing committee, I make sure the school's money is spent openly and every child gets the same chance. My door is open — come and talk to us any time.">ম্যানেজিং কমিটির সভাপতি হিসেবে আমার কাজ একটাই — স্কুলের প্রতিটা টাকার হিসাব যেন পরিষ্কার থাকে, আর প্রতিটা বাচ্চা যেন সমান সুযোগ পায়। যেকোনো দরকারে সরাসরি আমাদের সাথে কথা বলুন।</p>
+              <div class="message-sign">
+                <strong data-en="Alhaj Md. Nurul Absar">আলহাজ্ব মোঃ নুরুল আবসার</strong>
+                <span data-en="Chairman, Managing Committee">সভাপতি, ম্যানেজিং কমিটি</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- ডান কার্ড: সভাপতি -->
-        <div class="message-card">
-          <div class="message-photo message-photo-warm">
-            <svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="সভাপতির ছবি">
-              <circle cx="150" cy="175" r="130" fill="rgba(255,255,255,0.14)"/>
-              <path d="M16 320 C16 248 74 222 150 222 C226 222 284 248 284 320 Z" fill="#3A3F47"/>
-              <path d="M117 226 L150 282 L183 226 Z" fill="#F7F5EE"/>
-              <path d="M117 226 L150 282 L120 320 L82 246 Z" fill="#2A2E35"/>
-              <path d="M183 226 L150 282 L180 320 L218 246 Z" fill="#2A2E35"/>
-              <path d="M116 226 L130 238 L120 246 Z" fill="#FFFFFF"/>
-              <path d="M184 226 L170 238 L180 246 Z" fill="#FFFFFF"/>
-              <path d="M143 242 L157 242 L159 254 L141 254 Z" fill="#C99A2E"/>
-              <path d="M141 254 L159 254 L164 300 L150 312 L136 300 Z" fill="#C99A2E"/>
-              <path d="M207 262 L231 257 L233 270 L209 275 Z" fill="#F7F5EE"/>
-              <path d="M130 190 L170 190 L170 232 Q150 246 130 232 Z" fill="#C99572"/>
-              <ellipse cx="94" cy="152" rx="8" ry="14" fill="#D9A67F"/>
-              <ellipse cx="206" cy="152" rx="8" ry="14" fill="#D9A67F"/>
-              <ellipse cx="150" cy="147" rx="56" ry="64" fill="#E0AC85"/>
-              <path d="M94 142 C90 100 112 82 150 80 C188 82 210 100 206 142 C202 120 190 106 150 101 C110 106 98 120 94 142 Z" fill="#D5D8DC"/>
-              <path d="M117 128 Q130 120 145 127" stroke="#B8BCC2" stroke-width="5.5" fill="none" stroke-linecap="round"/>
-              <path d="M155 127 Q170 120 183 128" stroke="#B8BCC2" stroke-width="5.5" fill="none" stroke-linecap="round"/>
-              <circle cx="131" cy="145" r="4.5" fill="#2B2623"/>
-              <circle cx="169" cy="145" r="4.5" fill="#2B2623"/>
-              <path d="M121 154 Q131 160 141 154" stroke="#C99572" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M159 154 Q169 160 179 154" stroke="#C99572" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <path d="M150 152 Q145 168 152 171" stroke="#B98560" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <path d="M126 176 Q150 166 174 176 Q162 186 150 180 Q138 186 126 176 Z" fill="#C9CCD1"/>
-              <path d="M136 192 Q150 200 164 192" stroke="#8A4B3B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="message-body">
-            <span class="message-role">সভাপতি</span>
-            <h3>সভাপতির বাণী</h3>
-            <p>সম্মানিত অভিভাবকবৃন্দ, ১৯৯২ সালে কয়েকটি পরিবারের স্বপ্ন নিয়ে যে যাত্রা শুরু হয়েছিল, আজ তা ১২০০-এরও বেশি শিক্ষার্থীর একটি প্রাণবন্ত পরিবারে পরিণত হয়েছে। এই পথচলায় অভিভাবক, শিক্ষক ও প্রাক্তন শিক্ষার্থীদের অবদান অনস্বীকার্য।</p>
-            <p>স্কুল ব্যবস্থাপনা পরিষদের সভাপতি হিসেবে আমি স্বচ্ছতা, জবাবদিহিতা এবং সবার জন্য সমান সুযোগ নিশ্চিত করতে প্রতিশ্রুতিবদ্ধ। আপনাদের পরামর্শ ও সহযোগিতা আমাদের আগামীর পথকে আরও সুগম করবে।</p>
-            <div class="message-sign">
-              <strong>ড্যানিয়েল কিম</strong>
-              সভাপতি, স্কুল ব্যবস্থাপনা পরিষদ
+          <div class="message-card">
+            <div class="message-photo message-photo-teal">
+              <img src="images/people/headmaster.jpg" alt="মোহাম্মদ জসিম উদ্দিন" data-en-alt="Mohammad Jashim Uddin" width="480" height="600" loading="lazy">
+            </div>
+            <div class="message-body">
+              <span class="message-role" data-en="Headmaster">প্রধান শিক্ষক</span>
+              <h3 data-en="From the headmaster">প্রধান শিক্ষকের কথা</h3>
+              <p data-en="Dear guardians and students, welcome. We want every child to come to school happy and go home having learned something. Good results matter — but so do manners, honesty and the courage to ask questions.">প্রিয় অভিভাবক ও শিক্ষার্থীরা, সবুজছায়ায় আপনাদের স্বাগত। আমরা চাই প্রতিটা বাচ্চা হাসিমুখে স্কুলে আসুক, আর কিছু শিখে বাড়ি ফিরুক। ভালো রেজাল্ট অবশ্যই দরকার — কিন্তু আদব-কায়দা, সততা আর প্রশ্ন করার সাহসও সমান জরুরি।</p>
+              <p data-en="Our teachers keep an eye on every student. If someone falls behind, we run free extra classes and call the guardian ourselves. Let's work together.">আমাদের শিক্ষকেরা প্রতিটা শিক্ষার্থীর খোঁজ রাখেন। কেউ পিছিয়ে পড়লে বিনা খরচে বাড়তি ক্লাস হয়, আর আমরা নিজেরাই অভিভাবককে ফোন করি। চলুন, একসাথে কাজ করি।</p>
+              <div class="message-sign">
+                <strong data-en="Mohammad Jashim Uddin">মোহাম্মদ জসিম উদ্দিন</strong>
+                <span data-en="Headmaster, Sobujchhaya High School">প্রধান শিক্ষক, সবুজছায়া উচ্চ বিদ্যালয়</span>
+              </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- NOTICE BOARD -->
     <section class="section alt" id="notice-board">
@@ -203,71 +153,71 @@
         <div class="notice-board reveal">
           <div class="notice-board-head">
             <div>
-              <span class="eyebrow">সাম্প্রতিক তথ্য</span>
-              <h2>নোটিশ বোর্ড</h2>
+              <span class="eyebrow" data-en="Latest updates">সর্বশেষ খবর</span>
+              <h2 data-en="Notice board">নোটিশ বোর্ড</h2>
             </div>
-            <a href="notice-details.html" class="btn btn-ghost btn-sm">সকল নোটিশ দেখুন</a>
+            <a href="notice-details.html" class="btn btn-ghost btn-sm" data-en="All notices">সব নোটিশ দেখুন</a>
           </div>
           <ul class="notice-list">
 
             <li class="notice-item">
-              <div class="notice-date"><span class="notice-day">২৮</span><span class="notice-month">আগস্ট</span></div>
+              <div class="notice-date"><span class="notice-day" data-en="01">০১</span><span class="notice-month" data-en="Nov">নভেম্বর</span></div>
               <div class="notice-body">
-                <span class="notice-tag notice-tag-admissions">ভর্তি</span>
-                <h3>২০২৭ শিক্ষাবর্ষের ভর্তি আবেদন শুরু হয়েছে</h3>
-                <p>আবেদন পোর্টাল চালু হয়েছে — আর্লি ডিসিশনের শেষ তারিখ ১৫ নভেম্বর।</p>
+                <span class="notice-tag notice-tag-admissions" data-en="Admissions">ভর্তি</span>
+                <h3 data-en="2027 admission forms for Class 6 and 9 are out">২০২৭ সালের ৬ষ্ঠ ও ৯ম শ্রেণির ভর্তি ফরম দেওয়া শুরু</h3>
+                <p data-en="Collect forms from the office, 9 am–1 pm. Last day to submit: 30 November.">অফিস থেকে সকাল ৯টা–দুপুর ১টার মধ্যে ফরম নিন। জমার শেষ দিন ৩০ নভেম্বর।</p>
               </div>
               <div class="notice-actions">
-                <span class="notice-new">নতুন</span>
-                <a href="notice-details.html#admissions-open" class="btn btn-ghost btn-sm">বিস্তারিত দেখুন</a>
+                <span class="notice-new" data-en="New">নতুন</span>
+                <a href="notice-details.html#admission-2027" class="btn btn-ghost btn-sm" data-en="Details">বিস্তারিত</a>
               </div>
             </li>
 
             <li class="notice-item">
-              <div class="notice-date"><span class="notice-day">২১</span><span class="notice-month">আগস্ট</span></div>
+              <div class="notice-date"><span class="notice-day" data-en="26">২৬</span><span class="notice-month" data-en="Oct">অক্টোবর</span></div>
               <div class="notice-body">
-                <span class="notice-tag notice-tag-academics">শিক্ষাক্রম</span>
-                <h3>২০২৬–২৭ শিক্ষাবর্ষের একাডেমিক ক্যালেন্ডার প্রকাশিত</h3>
-                <p>পূর্ণ শিক্ষাবর্ষের টার্ম তারিখ, ছুটি এবং পরীক্ষার সময়সূচি এখন উপলব্ধ।</p>
+                <span class="notice-tag notice-tag-academics" data-en="Exams">পরীক্ষা</span>
+                <h3 data-en="Annual exam routine published">বার্ষিক পরীক্ষার রুটিন প্রকাশ</h3>
+                <p data-en="Exams for Classes 6–9 begin on 23 November. Admit cards from 18 November.">৬ষ্ঠ–৯ম শ্রেণির পরীক্ষা শুরু ২৩ নভেম্বর। প্রবেশপত্র দেওয়া হবে ১৮ নভেম্বর থেকে।</p>
               </div>
               <div class="notice-actions">
-                <a href="notice-details.html#academic-calendar" class="btn btn-ghost btn-sm">বিস্তারিত দেখুন</a>
+                <a href="notice-details.html#annual-exam" class="btn btn-ghost btn-sm" data-en="Details">বিস্তারিত</a>
               </div>
             </li>
 
             <li class="notice-item">
-              <div class="notice-date"><span class="notice-day">১৪</span><span class="notice-month">আগস্ট</span></div>
+              <div class="notice-date"><span class="notice-day" data-en="20">২০</span><span class="notice-month" data-en="Oct">অক্টোবর</span></div>
               <div class="notice-body">
-                <span class="notice-tag notice-tag-events">ইভেন্ট</span>
-                <h3>অভিভাবক-শিক্ষক সভার সময়সূচি প্রকাশিত</h3>
-                <p>সেপ্টেম্বরের সভার জন্য সাইন-আপ শুরু হবে এই শুক্রবার সকাল ৯টা থেকে।</p>
+                <span class="notice-tag notice-tag-events" data-en="Event">অনুষ্ঠান</span>
+                <h3 data-en="Guardians' meeting on 14 November">১৪ নভেম্বর অভিভাবক সমাবেশ</h3>
+                <p data-en="Meet your child's class teacher and see the half-yearly results. Starts at 10 am.">ক্লাস টিচারের সাথে কথা বলুন, অর্ধবার্ষিকের খাতা দেখুন। শুরু সকাল ১০টায়।</p>
               </div>
               <div class="notice-actions">
-                <a href="notice-details.html#ptc-schedule" class="btn btn-ghost btn-sm">বিস্তারিত দেখুন</a>
+                <a href="notice-details.html#guardian-meeting" class="btn btn-ghost btn-sm" data-en="Details">বিস্তারিত</a>
               </div>
             </li>
 
             <li class="notice-item">
-              <div class="notice-date"><span class="notice-day">০৫</span><span class="notice-month">সেপ্টে</span></div>
+              <div class="notice-date"><span class="notice-day" data-en="15">১৫</span><span class="notice-month" data-en="Oct">অক্টোবর</span></div>
               <div class="notice-body">
-                <span class="notice-tag notice-tag-holiday">ছুটি</span>
-                <h3>লেবার ডে উপলক্ষে ক্যাম্পাস বন্ধ</h3>
-                <p>১ সেপ্টেম্বর কোনো ক্লাস হবে না। ২ সেপ্টেম্বর থেকে নিয়মিত সময়সূচি অনুসারে ক্লাস শুরু হবে।</p>
+                <span class="notice-tag notice-tag-holiday" data-en="Holiday">ছুটি</span>
+                <h3 data-en="Victory Day programme and holiday">বিজয় দিবসের অনুষ্ঠান ও ছুটি</h3>
+                <p data-en="No classes on 16 December. Scouts and selected students join the parade at 8 am.">১৬ ডিসেম্বর ক্লাস হবে না। সকাল ৮টায় কুচকাওয়াজে স্কাউট ও বাছাই করা শিক্ষার্থীরা থাকবে।</p>
               </div>
               <div class="notice-actions">
-                <a href="notice-details.html#labor-day" class="btn btn-ghost btn-sm">বিস্তারিত দেখুন</a>
+                <a href="notice-details.html#victory-day" class="btn btn-ghost btn-sm" data-en="Details">বিস্তারিত</a>
               </div>
             </li>
 
             <li class="notice-item">
-              <div class="notice-date"><span class="notice-day">০৮</span><span class="notice-month">সেপ্টে</span></div>
+              <div class="notice-date"><span class="notice-day" data-en="10">১০</span><span class="notice-month" data-en="Oct">অক্টোবর</span></div>
               <div class="notice-body">
-                <span class="notice-tag notice-tag-events">ইভেন্ট</span>
-                <h3>শরৎকালীন ক্রীড়া বাছাইয়ের জন্য সাইন-আপ শুরু</h3>
-                <p>ফুটবল, সাঁতার এবং ক্রস-কান্ট্রি বাছাই শুরু হবে ৮ সেপ্টেম্বরের সপ্তাহ থেকে।</p>
+                <span class="notice-tag notice-tag-events" data-en="Event">অনুষ্ঠান</span>
+                <h3 data-en="Sports day: submit your names">বার্ষিক ক্রীড়া প্রতিযোগিতায় নাম জমা দিন</h3>
+                <p data-en="Running, long jump, sack race and more. Give your name to the class teacher by 15 November.">দৌড়, লং জাম্প, বস্তা দৌড়সহ আরও অনেক খেলা। ১৫ নভেম্বরের মধ্যে ক্লাস টিচারের কাছে নাম দিন।</p>
               </div>
               <div class="notice-actions">
-                <a href="notice-details.html#sports-tryouts" class="btn btn-ghost btn-sm">বিস্তারিত দেখুন</a>
+                <a href="notice-details.html#sports-day" class="btn btn-ghost btn-sm" data-en="Details">বিস্তারিত</a>
               </div>
             </li>
 
@@ -279,32 +229,32 @@
     <!-- EXPLORE -->
     <section class="section">
       <div class="wrap">
-        <span class="eyebrow">ব্রাইটল্যান্ডস সম্পর্কে জানুন</span>
-        <h2>যা কিছু জানা দরকার, সব এক জায়গায়।</h2>
+        <span class="eyebrow" data-en="Get to know Sobujchhaya">সবুজছায়াকে জানুন</span>
+        <h2 data-en="Everything you need to know, in one place.">যা জানতে চান, সব এক জায়গায়।</h2>
         <div class="card-grid reveal">
           <div class="link-card">
-            <span class="card-index">০১</span>
-            <h3>আমাদের ইতিহাস</h3>
-            <p>১৯৯২ সালের একটি ক্লাসরুম থেকে আজকের তিনটি ভবনবিশিষ্ট লেকভিউ টেরেস ক্যাম্পাস পর্যন্ত যাত্রা।</p>
-            <a class="more" href="history.html">পুরো গল্প পড়ুন →</a>
+            <span class="card-index" data-en="01">০১</span>
+            <h3 data-en="Our history">আমাদের ইতিহাস</h3>
+            <p data-en="From one tin-roofed room in 1986 to a four-storey building today.">১৯৮৬ সালের একটা টিনের ঘর থেকে আজকের চারতলা ভবন পর্যন্ত গল্প।</p>
+            <a class="more" href="history.html" data-en="Read the story →">পুরো গল্প পড়ুন →</a>
           </div>
           <div class="link-card">
-            <span class="card-index">০২</span>
-            <h3>আমাদের শিক্ষকবৃন্দ</h3>
-            <p>প্রতিটি বিভাগ জুড়ে আমাদের শিক্ষক তালিকা খুঁজুন এবং ফিল্টার করুন।</p>
-            <a class="more" href="teachers.html">শিক্ষকদের সাথে পরিচিত হন →</a>
+            <span class="card-index" data-en="02">০২</span>
+            <h3 data-en="Our teachers">আমাদের শিক্ষকেরা</h3>
+            <p data-en="Search the teacher list by name or subject.">নাম বা বিষয় দিয়ে শিক্ষকদের তালিকা খুঁজে দেখুন।</p>
+            <a class="more" href="teachers.html" data-en="Meet the teachers →">শিক্ষকদের চিনুন →</a>
           </div>
           <div class="link-card">
-            <span class="card-index">০৩</span>
-            <h3>আমাদের শিক্ষার্থীরা</h3>
-            <p>প্লে-গ্রুপ থেকে দ্বাদশ শ্রেণি পর্যন্ত ক্লাব, ক্রীড়া এবং দৈনন্দিন ক্যাম্পাস জীবন।</p>
-            <a class="more" href="students.html">শিক্ষার্থী জীবন দেখুন →</a>
+            <span class="card-index" data-en="03">০৩</span>
+            <h3 data-en="Student life">শিক্ষার্থীদের জীবন</h3>
+            <p data-en="Clubs, sports, scouts and everything that happens outside the classroom.">ক্লাব, খেলাধুলা, স্কাউট — ক্লাসের বাইরের সব কিছু।</p>
+            <a class="more" href="students.html" data-en="See student life →">দেখে আসুন →</a>
           </div>
           <div class="link-card">
-            <span class="card-index">০৪</span>
-            <h3>পরীক্ষার ফলাফল</h3>
-            <p>পাঁচ বছরের ফলাফল একনজরে — পাসের হার, বিষয়ভিত্তিক স্কোর এবং আরও অনেক কিছু।</p>
-            <a class="more" href="results.html">ফলাফল দেখুন →</a>
+            <span class="card-index" data-en="04">০৪</span>
+            <h3 data-en="SSC results">এসএসসি ফলাফল</h3>
+            <p data-en="Five years of results at a glance — pass rate, GPA-5 and subject-wise numbers.">পাঁচ বছরের ফল একনজরে — পাসের হার, জিপিএ-৫ আর বিষয়ভিত্তিক হিসাব।</p>
+            <a class="more" href="results.html" data-en="See results →">ফলাফল দেখুন →</a>
           </div>
         </div>
       </div>
@@ -313,63 +263,60 @@
     <!-- CURRICULUM TABS -->
     <section class="section alt">
       <div class="wrap">
-        <span class="eyebrow center">পাঠ্যক্রম</span>
-        <h2 class="center">একটি স্কুল, শিক্ষার তিনটি ধাপ।</h2>
+        <span class="eyebrow center" data-en="How we teach">পড়াশোনা</span>
+        <h2 class="center" data-en="Five years, taught step by step.">পাঁচ বছরের পড়াশোনা, ধাপে ধাপে।</h2>
         <div class="tab-bar reveal">
-          <button class="tab-btn active" data-tab="primary">প্রাথমিক (প্লে-গ্রুপ–৫ম শ্রেণি)</button>
-          <button class="tab-btn" data-tab="middle">মাধ্যমিক (৬ষ্ঠ–৮ম শ্রেণি)</button>
-          <button class="tab-btn" data-tab="senior">উচ্চ মাধ্যমিক (৯ম–১২শ শ্রেণি)</button>
+          <button class="tab-btn active" data-tab="junior" data-en="Class 6–8">৬ষ্ঠ–৮ম শ্রেণি</button>
+          <button class="tab-btn" data-tab="ssc" data-en="Class 9–10 (SSC)">৯ম–১০ম শ্রেণি (এসএসসি)</button>
+          <button class="tab-btn" data-tab="cocurricular" data-en="Beyond the classroom">ক্লাসের বাইরে</button>
         </div>
 
-        <div class="tab-panel active" data-tab="primary">
+        <div class="tab-panel active" data-tab="junior">
           <div class="tab-content reveal">
-            <img src="https://picsum.photos/id/1005/650/480" alt="প্রাথমিক শ্রেণিকক্ষ"
+            <img src="images/classroom-girls.jpg" alt="ক্লাসরুমে মনোযোগ দিয়ে শুনছে ছাত্রীরা" data-en-alt="Girls listening closely in a classroom" loading="lazy"
               style="border-radius: var(--radius); box-shadow: var(--shadow);">
             <div>
-              <h3>খেলা, অনুসন্ধান, এবং দ্বিতীয় ভাষার প্রথম পদক্ষেপ।</h3>
-              <p>আমাদের প্রাথমিক স্তরে ওয়ার্কশিটের বদলে অনুসন্ধানভিত্তিক পাঠের মাধ্যমে কৌতূহলের ভিত্তি গড়ে তোলা হয়।
-              </p>
+              <h3 data-en="Building strong basics in Bangla, English and maths.">বাংলা, ইংরেজি আর গণিতের ভিত মজবুত করা।</h3>
+              <p data-en="We follow the national curriculum, with plenty of hands-on work so children understand instead of memorising.">জাতীয় শিক্ষাক্রম মেনেই পড়াই, তবে মুখস্থের বদলে হাতে-কলমে বুঝিয়ে।</p>
               <ul>
-                <li>বিজ্ঞান, সমাজবিজ্ঞান ও শিল্পকলায় অনুসন্ধানভিত্তিক পাঠ</li>
-                <li>প্লে-গ্রুপ থেকেই দ্বিতীয় ভাষার শিক্ষা শুরু</li>
-                <li>প্রতিদিন আউটডোর লার্নিং ব্লক, রোদ-বৃষ্টি নির্বিশেষে</li>
-                <li>একই হোমরুম শিক্ষক দুই বছর ধরে ক্লাসের সাথে থাকেন</li>
+                <li data-en="Short class test every week, so no one falls behind quietly">প্রতি সপ্তাহে ছোট ক্লাস টেস্ট — কেউ চুপচাপ পিছিয়ে পড়ে না</li>
+                <li data-en="Free remedial classes after school for students who need them">যাদের দরকার, স্কুল শেষে বিনা খরচে বাড়তি ক্লাস</li>
+                <li data-en="Regular ICT lab classes from Class 6">৬ষ্ঠ শ্রেণি থেকেই নিয়মিত কম্পিউটার ল্যাবে ক্লাস</li>
+                <li data-en="Guardians get an SMS for every absence">অনুপস্থিত হলেই অভিভাবকের ফোনে এসএমএস</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="tab-panel" data-tab="middle">
+        <div class="tab-panel" data-tab="ssc">
           <div class="tab-content reveal">
-            <img src="https://picsum.photos/id/1000/650/480" alt="মাধ্যমিক শিক্ষার্থীরা"
+            <img src="images/school-field.jpg" alt="স্কুল ভবন আর সামনের মাঠ" data-en-alt="School building and front field" loading="lazy"
               style="border-radius: var(--radius); box-shadow: var(--shadow);">
             <div>
-              <h3>যেখানে স্বাধীনতা গুরুত্বপূর্ণ হয়ে ওঠে।</h3>
-              <p>মাধ্যমিক শিক্ষার্থীরা প্রকৃত ঐচ্ছিক বিষয়, সময়সীমা এবং তাদের প্রথম স্বাধীন গবেষণা প্রকল্প গ্রহণ করে।
-              </p>
+              <h3 data-en="Science, Business Studies or Humanities — with full SSC preparation.">বিজ্ঞান, ব্যবসায় শিক্ষা বা মানবিক — এসএসসির পুরো প্রস্তুতি।</h3>
+              <p data-en="From Class 9, students choose a group. We prepare them for the board exam without anyone needing outside coaching.">নবম শ্রেণিতে শিক্ষার্থীরা বিভাগ বেছে নেয়। বাইরে কোচিং ছাড়াই যেন বোর্ড পরীক্ষার প্রস্তুতি হয়ে যায় — সেটাই আমাদের লক্ষ্য।</p>
               <ul>
-                <li>প্রতি টার্মে কোডিং, মৃৎশিল্প, সাংবাদিকতাসহ ঐচ্ছিক বিষয়ের সুযোগ</li>
-                <li>৭ম শ্রেণিতে প্রথম স্বাধীন গবেষণা প্রকল্প</li>
-                <li>লক্ষ্য নির্ধারণ ও সহায়তার জন্য প্রতিদিন অ্যাডভাইজরি গ্রুপ সভা</li>
-                <li>প্রতি বসন্তে শ্রেণিভিত্তিক রাত্রিযাপনসহ ভ্রমণ</li>
+                <li data-en="Three model tests before the SSC, marked like the board">এসএসসির আগে বোর্ডের নিয়মে তিনটা মডেল টেস্ট</li>
+                <li data-en="Practical classes in the physics, chemistry and biology labs">পদার্থ, রসায়ন আর জীববিজ্ঞান ল্যাবে নিয়মিত প্র্যাকটিক্যাল</li>
+                <li data-en="Special care batch for weaker students in Class 10">দশম শ্রেণিতে দুর্বলদের জন্য আলাদা 'বিশেষ যত্ন' ব্যাচ</li>
+                <li data-en="Career guidance on choosing a college after SSC">এসএসসির পর কলেজ বাছাই নিয়ে পরামর্শ</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="tab-panel" data-tab="senior">
+        <div class="tab-panel" data-tab="cocurricular">
           <div class="tab-content reveal">
-            <img src="https://picsum.photos/id/1074/650/480" alt="উচ্চ মাধ্যমিক শিক্ষার্থীরা"
+            <img src="images/girls-march.jpg" alt="বার্ষিক ক্রীড়ায় পতাকা হাতে কুচকাওয়াজ করছে ছাত্রীরা" data-en-alt="Girls marching with a flag on sports day" loading="lazy"
               style="border-radius: var(--radius); box-shadow: var(--shadow);">
             <div>
-              <h3>কলেজের জন্য প্রস্তুত, এবং তার চেয়েও বেশি কিছুর জন্য প্রস্তুত।</h3>
-              <p>আন্তর্জাতিক মানদণ্ডে যাচাইকৃত ডিপ্লোমা ট্র্যাকের পাশাপাশি প্রতিটি শিক্ষার্থী একটি প্রকৃত ক্যাপস্টোন
-                প্রকল্প সম্পন্ন করে।</p>
+              <h3 data-en="Sports, scouts, debate and culture.">খেলাধুলা, স্কাউট, বিতর্ক আর সংস্কৃতি।</h3>
+              <p data-en="Books aren't everything. Every student is part of at least one club or team.">শুধু বই নিয়ে বসে থাকলে চলে না। প্রতিটা শিক্ষার্থী অন্তত একটা ক্লাব বা দলে থাকে।</p>
               <ul>
-                <li>আন্তর্জাতিক মানদণ্ডে যাচাইকৃত ডিপ্লোমা পথ</li>
-                <li>প্রতি মে মাসে জনসমক্ষে উপস্থাপিত সিনিয়র ক্যাপস্টোন প্রকল্প</li>
-                <li>১০ম শ্রেণি থেকেই নিবেদিত কলেজ কাউন্সেলিং</li>
-                <li>দুটি অংশীদার বিশ্ববিদ্যালয়ের সাথে ডুয়েল-এনরোলমেন্ট সুবিধা</li>
+                <li data-en="Scouts and Girl Guides with weekly meetings">স্কাউট আর গার্ল গাইড, প্রতি সপ্তাহে মিটিং</li>
+                <li data-en="Debate, science and English clubs">বিতর্ক, বিজ্ঞান আর ইংলিশ ক্লাব</li>
+                <li data-en="Annual sports day, cultural programme and study tour">বার্ষিক ক্রীড়া, সাংস্কৃতিক অনুষ্ঠান আর শিক্ষা সফর</li>
+                <li data-en="Pohela Boishakh, Language Day and Victory Day celebrated together">পহেলা বৈশাখ, ভাষা দিবস, বিজয় দিবস — সবাই মিলে উদযাপন</li>
               </ul>
             </div>
           </div>
@@ -377,66 +324,88 @@
       </div>
     </section>
 
-    <!-- WHY BRIGHTLANDS -->
+    <!-- WHY US -->
     <section class="section">
       <div class="wrap">
-        <span class="eyebrow">আমাদের পদ্ধতি</span>
-        <h2>ছোট শ্রেণিকক্ষ। প্রকৃত মেন্টরশিপ। বৈশ্বিক দৃষ্টিভঙ্গি।</h2>
+        <span class="eyebrow" data-en="Our approach">আমাদের পদ্ধতি</span>
+        <h2 data-en="Small classes. Caring teachers. Guardians in the loop.">ছোট ক্লাস। যত্নশীল শিক্ষক। অভিভাবকের সাথে নিয়মিত যোগাযোগ।</h2>
         <div class="card-grid cols-3 reveal">
           <div class="value-card">
-            <h3>১২:১ শিক্ষার্থী-শিক্ষক অনুপাত</h3>
-            <p>এতটাই ছোট শ্রেণিকক্ষ যে প্রতিটি শিক্ষার্থীকে প্রতিটি বিষয়ে, প্রতি বছর নাম ধরে চেনা যায়।</p>
+            <h3 data-en="No more than 45 per section">প্রতি সেকশনে ৪৫ জনের বেশি না</h3>
+            <p data-en="However high the demand, we keep sections small enough for teachers to know every child.">চাহিদা যতই থাকুক, সেকশন ছোট রাখি — যাতে শিক্ষক প্রতিটা বাচ্চাকে চেনেন।</p>
           </div>
           <div class="value-card">
-            <h3>সত্যিকারের বৈশ্বিক শ্রেণিকক্ষ</h3>
-            <p>৪২টি দেশের শিক্ষার্থীরা পাশাপাশি বসে শেখে — এখানে বৈশ্বিক দৃষ্টিভঙ্গি কোনো পাঠ্যক্রমের অংশ নয়, বরং
-              প্রতিদিনের জীবন।</p>
+            <h3 data-en="No need for outside coaching">কোচিং ছাড়াই প্রস্তুতি</h3>
+            <p data-en="Extra classes, model tests and doubt-clearing sessions happen right here at school, at no extra cost.">বাড়তি ক্লাস, মডেল টেস্ট, প্রশ্ন-উত্তরের সেশন — সবই স্কুলে, আলাদা টাকা ছাড়া।</p>
           </div>
           <div class="value-card">
-            <h3>শিক্ষক যারা মেন্টর, শুধু গ্রেড দেন না</h3>
-            <p>প্রতিটি শিক্ষক পরামর্শদাতা, কোচ অথবা কোনো ক্লাব পরিচালনা করেন — সম্পর্ক শ্রেণিকক্ষের বাইরেও বিস্তৃত হয়।
-            </p>
+            <h3 data-en="Guardians always know">অভিভাবক সব জানেন</h3>
+            <p data-en="Absence alerts by SMS, a guardians' meeting every term, and teachers who pick up the phone.">অনুপস্থিতির এসএমএস, প্রতি টার্মে অভিভাবক সমাবেশ, আর শিক্ষকেরা ফোন ধরেন।</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHERS TEASER -->
+    <section class="section alt">
+      <div class="wrap">
+        <div class="staff-teaser-head">
+          <div>
+            <span class="eyebrow" data-en="Our teachers">শিক্ষকবৃন্দ</span>
+            <h2 data-en="48 teachers who know every student.">৪৮ জন শিক্ষক, যাঁরা প্রতিটা শিক্ষার্থীকে চেনেন।</h2>
+          </div>
+          <a href="teachers.html" class="btn btn-ghost btn-sm" data-en="Full teacher list">শিক্ষকদের পুরো তালিকা</a>
+        </div>
+        <div class="staff-collage">
+          <figure class="staff-collage-main">
+            <img src="images/teachers-group.jpg" alt="শিক্ষকদের একসাথে তোলা ছবি" data-en-alt="Teachers group photo" loading="lazy">
+          </figure>
+          <figure>
+            <img src="images/teachers-group-2.jpg" alt="শিক্ষকদের আরেকটা দলীয় ছবি" data-en-alt="Another teachers group photo" loading="lazy">
+          </figure>
+          <figure>
+            <img src="images/teachers-students.jpg" alt="শিক্ষক ও শিক্ষার্থীদের পুরোনো দলীয় ছবি" data-en-alt="Old group photo of teachers and students" loading="lazy">
+          </figure>
         </div>
       </div>
     </section>
 
     <!-- QUICK DOWNLOADS -->
-    <section class="section alt">
+    <section class="section">
       <div class="wrap">
-        <span class="eyebrow">দ্রুত লিংক</span>
-        <h2>অভিভাবকদের সবচেয়ে বেশি প্রয়োজনীয় ফর্ম ও নথিপত্র।</h2>
+        <span class="eyebrow" data-en="Quick links">দরকারি কাগজ</span>
+        <h2 data-en="The forms guardians ask for most.">অভিভাবকেরা যেগুলো সবচেয়ে বেশি চান।</h2>
         <div class="info-grid reveal">
           <div class="info-card">
             <div class="info-icon">&#128196;</div>
-            <h3>ভর্তি ফর্ম</h3>
+            <h3 data-en="Admission form">ভর্তি ফরম</h3>
             <div class="info-actions">
-              <a href="#" class="info-btn">দেখুন</a>
-              <a href="#" class="info-btn info-btn-solid">ডাউনলোড</a>
+              <a href="#" class="info-btn" data-en="View">দেখুন</a>
+              <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
             </div>
           </div>
           <div class="info-card">
             <div class="info-icon">&#128179;</div>
-            <h3>বেতন কাঠামো</h3>
+            <h3 data-en="Tuition &amp; fees">বেতন ও ফি</h3>
             <div class="info-actions">
-              <a href="#" class="info-btn">দেখুন</a>
-              <a href="#" class="info-btn info-btn-solid">ডাউনলোড</a>
+              <a href="#" class="info-btn" data-en="View">দেখুন</a>
+              <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
             </div>
           </div>
           <div class="info-card">
             <div class="info-icon">&#128197;</div>
-            <h3>একাডেমিক ক্যালেন্ডার</h3>
+            <h3 data-en="Holiday list 2027">ছুটির তালিকা ২০২৭</h3>
             <div class="info-actions">
-              <a href="#" class="info-btn">দেখুন</a>
-              <a href="#" class="info-btn info-btn-solid">ডাউনলোড</a>
+              <a href="#" class="info-btn" data-en="View">দেখুন</a>
+              <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
             </div>
           </div>
           <div class="info-card">
-            <div class="info-icon">&#128085;</div>
-            <h3>ইউনিফর্ম নির্দেশিকা</h3>
+            <div class="info-icon">&#128339;</div>
+            <h3 data-en="Class routine">ক্লাস রুটিন</h3>
             <div class="info-actions">
-              <a href="#" class="info-btn">দেখুন</a>
-              <a href="#" class="info-btn info-btn-solid">ডাউনলোড</a>
+              <a href="#" class="info-btn" data-en="View">দেখুন</a>
+              <a href="#" class="info-btn info-btn-solid" data-en="Download">ডাউনলোড</a>
             </div>
           </div>
         </div>
@@ -444,27 +413,24 @@
     </section>
 
     <!-- TESTIMONIAL SLIDER -->
-    <section class="section">
+    <section class="section alt">
       <div class="wrap">
-        <span class="eyebrow center">অভিভাবকদের মতামত</span>
-        <h2 class="center">অন্যদের অভিজ্ঞতায় ব্রাইটল্যান্ডস।</h2>
+        <span class="eyebrow center" data-en="What guardians say">অভিভাবকেরা যা বলেন</span>
+        <h2 class="center" data-en="In their own words.">তাঁদের মুখেই শুনুন।</h2>
         <div class="testimonial-slider reveal">
           <div class="testimonial-track">
             <div class="testimonial-slides">
               <div class="testimonial-slide">
-                <blockquote>"ব্রাইটল্যান্ডসে আসার আগে আমার মেয়ে দুটি স্কুল পরিবর্তন করেছিল। এটিই প্রথম জায়গা যেখানে সে
-                  দেরি করে থাকতে চায়।"</blockquote>
-                <cite>— ৬ষ্ঠ শ্রেণির এক শিক্ষার্থীর অভিভাবক</cite>
+                <blockquote data-en="&quot;My son was weak in maths. Sajib Sir kept him back for extra classes for three months, and now maths is his favourite subject.&quot;">"আমার ছেলে অঙ্কে খুব কাঁচা ছিল। সজীব স্যার তিন মাস ছুটির পর আলাদা করে বসিয়েছেন, এখন অঙ্কই ওর সবচেয়ে প্রিয় বিষয়।"</blockquote>
+                <cite data-en="— Guardian of a Class 8 student">— ৮ম শ্রেণির এক শিক্ষার্থীর মা</cite>
               </div>
               <div class="testimonial-slide">
-                <blockquote>"ক্যাপস্টোন প্রকল্পটি আমার ছেলের নিজের ধারণা দেখার দৃষ্টিভঙ্গি বদলে দিয়েছে — সে এমনভাবে
-                  উপস্থাপন করেছিল যেন এটি সত্যিই গুরুত্বপূর্ণ, কারণ এটি ছিল।"</blockquote>
-                <cite>— ১২শ শ্রেণির এক শিক্ষার্থীর অভিভাবক</cite>
+                <blockquote data-en="&quot;The day my daughter missed school, I got an SMS before 10 am. That's when I knew they really keep an eye on the children.&quot;">"যেদিন মেয়ে স্কুলে যায়নি, সকাল ১০টার আগেই ফোনে এসএমএস চলে এসেছে। তখনই বুঝলাম, এরা সত্যিই বাচ্চাদের খেয়াল রাখে।"</blockquote>
+                <cite data-en="— Guardian of a Class 6 student">— ৬ষ্ঠ শ্রেণির এক শিক্ষার্থীর বাবা</cite>
               </div>
               <div class="testimonial-slide">
-                <blockquote>"তিনটি ভিন্ন দেশ থেকে আসার পর, আমাদের সন্তানরা প্রথমবারের মতো অনুভব করেছে যে শ্রেণিকক্ষটি
-                  তাদের জীবনের বাকি অংশের মতোই বৈচিত্র্যময়।"</blockquote>
-                <cite>— ৩য় ও ৮ম শ্রেণির শিক্ষার্থীদের অভিভাবক</cite>
+                <blockquote data-en="&quot;No coaching at all, and he still got GPA-5 in the SSC. The teachers did everything at school.&quot;">"কোনো কোচিং ছাড়াই ছেলে এসএসসিতে জিপিএ-৫ পেয়েছে। যা করার, স্যার-ম্যাডামরা স্কুলেই করেছেন।"</blockquote>
+                <cite data-en="— Guardian of an SSC 2026 candidate">— ২০২৬ সালের এক এসএসসি পরীক্ষার্থীর অভিভাবক</cite>
               </div>
             </div>
           </div>
@@ -474,36 +440,36 @@
     </section>
 
     <!-- BLOG TEASER -->
-    <section class="section alt">
+    <section class="section">
       <div class="wrap">
-        <span class="eyebrow">ব্লগ থেকে</span>
-        <h2>ক্যাম্পাসের সাম্প্রতিক খবর।</h2>
+        <span class="eyebrow" data-en="School news">স্কুলের খবর</span>
+        <h2 data-en="What's been happening lately.">সম্প্রতি যা হলো।</h2>
         <div class="blog-grid reveal">
           <article class="blog-card">
-            <img src="https://picsum.photos/id/1084/500/320" alt="">
+            <img src="images/students-formation.jpg" alt="মাঠে সারি বেঁধে দাঁড়ানো ছাত্ররা" data-en-alt="Students lined up on the school ground" loading="lazy">
             <div class="blog-card-body">
-              <span class="blog-date">১৪ আগস্ট, ২০২৬</span>
-              <h3>সিনিয়র ক্যাপস্টোন: এ বছরের প্রকল্পগুলোর ঝলক</h3>
-              <p>সৌর জল-গরম করার প্রোটোটাইপ থেকে শুরু করে স্থানীয় পাখি অভিপ্রয়ণ নিয়ে গবেষণা পর্যন্ত।</p>
-              <a class="more" href="blog.html">আরও পড়ুন →</a>
+              <span class="blog-date" data-en="12 July 2026">১২ জুলাই, ২০২৬</span>
+              <h3 data-en="SSC 2026: 112 students get GPA-5">এসএসসি ২০২৬: জিপিএ-৫ পেল ১১২ জন</h3>
+              <p data-en="A 98% pass rate — our best result in ten years.">পাসের হার ৯৮% — গত দশ বছরে আমাদের সেরা ফল।</p>
+              <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
             </div>
           </article>
           <article class="blog-card">
-            <img src="https://picsum.photos/id/1080/500/320" alt="">
+            <img src="images/scout-parade.jpg" alt="কুচকাওয়াজে স্কাউট দল" data-en-alt="Scouts at a parade" loading="lazy">
             <div class="blog-card-body">
-              <span class="blog-date">২৮ জুলাই, ২০২৬</span>
-              <h3>মডেল ইউএন দল আঞ্চলিক প্রতিযোগিতায় দ্বিতীয় স্থান অর্জন করেছে</h3>
-              <p>এগারোজন প্রতিনিধি, একটি দীর্ঘ সপ্তাহান্ত, এবং একটি দ্বিতীয় স্থান অর্জন।</p>
-              <a class="more" href="blog.html">আরও পড়ুন →</a>
+              <span class="blog-date" data-en="18 October 2026">১৮ অক্টোবর, ২০২৬</span>
+              <h3 data-en="Our scouts top the district parade">জেলা কুচকাওয়াজে প্রথম আমাদের স্কাউট দল</h3>
+              <p data-en="Weeks of morning practice paid off.">সপ্তাহের পর সপ্তাহ ভোরের অনুশীলনের ফল মিলল।</p>
+              <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
             </div>
           </article>
           <article class="blog-card">
-            <img src="https://picsum.photos/id/1076/500/320" alt="">
+            <img src="images/pohela-boishakh.jpg" alt="পহেলা বৈশাখে শিক্ষার্থীদের আনন্দ" data-en-alt="Students celebrating Pohela Boishakh" loading="lazy">
             <div class="blog-card-body">
-              <span class="blog-date">৯ জুলাই, ২০২৬</span>
-              <h3>২০২৭ শিক্ষাবর্ষের ভর্তি আবেদন এখন খোলা</h3>
-              <p>এ বছরের আবেদন প্রক্রিয়ায় নতুন কী আছে, আর কী অপরিবর্তিত রয়েছে।</p>
-              <a class="more" href="blog.html">আরও পড়ুন →</a>
+              <span class="blog-date" data-en="14 April 2026">১৪ এপ্রিল, ২০২৬</span>
+              <h3 data-en="A Boishakhi fair on the school ground">স্কুল মাঠে বৈশাখী মেলা</h3>
+              <p data-en="Pitha stalls, folk songs and a mangal shobhajatra around the block.">পিঠার দোকান, লোকগান আর পাড়া ঘুরে মঙ্গল শোভাযাত্রা।</p>
+              <a class="more" href="blog.html" data-en="Read more →">আরও পড়ুন →</a>
             </div>
           </article>
         </div>
@@ -515,10 +481,10 @@
       <div class="wrap">
         <div class="cta-banner reveal">
           <div>
-            <h3>নিজে এসে ক্যাম্পাস ঘুরে দেখুন।</h3>
-            <p>প্রতি মঙ্গল ও বৃহস্পতিবার সকালে ভ্রমণের ব্যবস্থা রয়েছে — কোনো বাধ্যবাধকতা ছাড়াই, শুধু ঘুরে দেখুন।</p>
+            <h3 data-en="Come and see the school yourself.">নিজে এসে স্কুলটা দেখে যান।</h3>
+            <p data-en="The office is open Sunday to Thursday, 9 am to 3 pm. Talk to the teachers, walk around — no obligation.">রবি থেকে বৃহস্পতিবার সকাল ৯টা–বিকেল ৩টা অফিস খোলা। শিক্ষকদের সাথে কথা বলুন, ঘুরে দেখুন — কোনো বাধ্যবাধকতা নেই।</p>
           </div>
-          <a href="contact.html" class="btn btn-ghost-light">ভ্রমণের সময় নিন</a>
+          <a href="contact.html" class="btn btn-ghost-light" data-en="Plan a visit">কবে আসবেন জানান</a>
         </div>
       </div>
     </section>
@@ -529,41 +495,41 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4>ব্রাইটল্যান্ডস ইন্টারন্যাশনাল</h4>
-          <p>১৯৯২ সাল থেকে এলারি বে-তে অবস্থিত একটি আন্তর্জাতিক মানসিকতার প্লে-গ্রুপ–১২শ শ্রেণি পর্যন্ত স্কুল, যা
-            কৌতূহলী মনকে বিশ্বব্যাপী চিন্তা করতে শেখায়।</p>
+          <h4 data-en="Sobujchhaya High School">সবুজছায়া উচ্চ বিদ্যালয়</h4>
+          <p data-en="A Class 6–10 high school in Agrabad, Chattogram, since 1986. National curriculum, Chattogram Board, MPO-listed.">১৯৮৬ সাল থেকে আগ্রাবাদ, চট্টগ্রামে ৬ষ্ঠ থেকে ১০ম শ্রেণির স্কুল। জাতীয় শিক্ষাক্রম, চট্টগ্রাম বোর্ড, এমপিওভুক্ত।</p>
           <form class="newsletter">
-            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
-            <button type="submit" class="btn btn-primary btn-sm">সাবস্ক্রাইব করুন</button>
+            <input type="email" placeholder="আপনার ইমেইল" data-en-placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm" data-en="Subscribe">খবর পেতে চাই</button>
           </form>
           <p class="newsletter-note form-note"></p>
         </div>
         <div>
-          <h4>অন্বেষণ করুন</h4>
-          <a href="history.html">আমাদের ইতিহাস</a>
-          <a href="teachers.html">আমাদের শিক্ষকবৃন্দ</a>
-          <a href="students.html">আমাদের শিক্ষার্থীরা</a>
-          <a href="results.html">পরীক্ষার ফলাফল</a>
+          <h4 data-en="Explore">ঘুরে দেখুন</h4>
+          <a href="history.html" data-en="Our history">আমাদের ইতিহাস</a>
+          <a href="teachers.html" data-en="Our teachers">শিক্ষকবৃন্দ</a>
+          <a href="students.html" data-en="Student life">শিক্ষার্থীদের জীবন</a>
+          <a href="results.html" data-en="SSC results">এসএসসি ফলাফল</a>
         </div>
         <div>
-          <h4>প্রতিষ্ঠান</h4>
-          <a href="about.html">আমাদের সম্পর্কে</a>
-          <a href="blog.html">ব্লগ</a>
-          <a href="contact.html">যোগাযোগ</a>
+          <h4 data-en="School">প্রতিষ্ঠান</h4>
+          <a href="about.html" data-en="About us">আমাদের কথা</a>
+          <a href="notice-details.html" data-en="Notice board">নোটিশ বোর্ড</a>
+          <a href="blog.html" data-en="News">স্কুলের খবর</a>
+          <a href="contact.html" data-en="Contact">যোগাযোগ</a>
         </div>
         <div>
-          <h4>ঠিকানা</h4>
-          <p>14 Lakeview Terrace<br>Ellery Bay, WA 98110</p>
-          <p>admissions@brightlands.example<br>(360) 555-0199</p>
+          <h4 data-en="Address">ঠিকানা</h4>
+          <p data-en="House 15, Road 3, Agrabad R/A&lt;br&gt;Chattogram-4100">বাড়ি ১৫, রোড ৩, আগ্রাবাদ আবাসিক এলাকা<br>চট্টগ্রাম-৪১০০</p>
+          <p data-en="info@yourschool.edu.bd&lt;br&gt;01800-000000">info@yourschool.edu.bd<br>০১৮০০-০০০০০০</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© ২০২৬ ব্রাইটল্যান্ডস ইন্টারন্যাশনাল স্কুল। সর্বস্বত্ব সংরক্ষিত।</span>
-        <span>ডিজাইন টেমপ্লেট — প্রকাশের আগে প্লেসহোল্ডার লেখা, ছবি ও যোগাযোগের তথ্য পরিবর্তন করে নিন।</span>
+        <span data-en="© 2026 Sobujchhaya High School. All rights reserved.">© ২০২৬ সবুজছায়া উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span data-en="Demo site — replace the names, photos and contact details before going live.">ডেমো সাইট — চালু করার আগে নাম, ছবি আর যোগাযোগের তথ্য বদলে নিন।</span>
       </div>
     </div>
   </footer>
-  <button id="back-to-top" class="back-to-top" aria-label="উপরে ফিরে যান">&#8593;</button>
+  <button id="back-to-top" class="back-to-top" aria-label="উপরে যান" data-en-aria-label="Back to top">&#8593;</button>
   <script src="script.js"></script>
 </body>
 
